@@ -30,7 +30,7 @@ const HeroComponent = () => {
                             </button>
                         </div>
                         <div className="md:w-1/2">
-                            <img src="/api/placeholder/600/400" alt="ID Cards" className="rounded-lg shadow-xl" />
+                            <img src="https://www.unwantedwitness.org/wp-content/uploads/2024/05/ubos.webp" alt="ID Cards" className="rounded-lg shadow-xl" />
                         </div>
                     </div>
                 </SwiperSlide>
@@ -49,7 +49,8 @@ const HeroComponent = () => {
                             </button>
                         </div>
                         <div className="md:w-1/2">
-                            <img src="/api/placeholder/600/400" alt="Digital ID Concept" className="rounded-lg shadow-xl" />
+                            <img src="https://www.unwantedwitness.org/wp-content/uploads/2024/05/ubos.webp" alt="ID Cards" className="rounded-lg shadow-xl" />
+                            {/* <img src="" alt="Digital ID Concept" className="rounded-lg shadow-xl" /> */}
                         </div>
                     </div>
                 </SwiperSlide>

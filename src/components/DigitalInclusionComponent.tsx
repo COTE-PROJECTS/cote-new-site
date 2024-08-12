@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import React from 'react';
 
 const DigitalInclusionSection: React.FC = () => {
@@ -7,10 +8,10 @@ const DigitalInclusionSection: React.FC = () => {
             data-parallax="3d"
         >
             {/* Background Image */}
-            <img
+            <Image
                 src="https://www.unwantedwitness.org/wp-content/uploads/2023/03/WhatsApp-Image-2023-02-24-at-09.26.46.jpeg"
-                alt="Digital Inclusion"
-                className="absolute inset-0 w-full h-full object-cover opacity-0"
+                alt="Digital Inclusion" width={1920} height={1080}
+                className="absolute inset-0 w-full h-full object-cover opacity-1"
             />
 
             <div className="relative z-10 flex flex-col md:flex-row items-center justify-between w-full max-w-screen-xl px-4 md:px-0">

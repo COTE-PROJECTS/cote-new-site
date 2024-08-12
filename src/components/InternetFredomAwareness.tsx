@@ -77,6 +77,7 @@
 // };
 
 // export default InternetFreedomAwareness;
+import Image from 'next/image';
 import React from 'react';
 
 const InternetFreedomAwareness: React.FC = () => {
@@ -85,10 +86,10 @@ const InternetFreedomAwareness: React.FC = () => {
             className="py-16 bg-[#f1f1f2] relative flex flex-col md:flex-row items-center justify-center"
         >
             {/* Background Image */}
-            <img
+            <Image
                 src="https://www.unwantedwitness.org/wp-content/uploads/2023/03/FreedomOfExpressionUW.jpg"
-                alt="Freedom of Expression"
-                className="absolute inset-0 w-full h-full object-cover opacity-0"
+                alt="Freedom of Expression" width={1920} height={1080}
+                className="absolute inset-0 w-full h-full object-cover opacity-1"
             />
 
             <div className="relative z-10 flex flex-col md:flex-row items-center justify-between w-full max-w-screen-xl px-4 md:px-0">
