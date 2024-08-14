@@ -16,18 +16,18 @@ const DataProtectionSection: React.FC = () => {
                     </div>
                     <div className="w-full md:w-1/2 mt-8 md:mt-0">
                         <div className="px-6">
-                            <b className="block text-lg text-black">Data Protection</b>
-                            <h1 className="text-4xl font-bold mt-4">
-                                EMPOWERING YOU WITH CONTROL OVER YOUR{' '}
-                                <span className="bg-[#f7941f] text-black px-1">
+                            {/* <b className="block font-extrabold text-lg text-black">Data Protection</b> */}
+                            <h1 className="text-4xl text-black uppercase font-bold mt-4">
+                                Interactive and Engaging Learning{' '}
+                                {/* <span className="bg-[#f7941f] text-black px-1">
                                     PRIVACY AND DIGITAL LIFE,
-                                </span>
+                                </span> */}
                             </h1>
                             <p className="mt-4 text-lg text-black">
-                                We raise awareness about the risks associated with the processing of personal data online and offline. This includes educating individuals about the types of data that are typically collected by companies and how that data can be used.
+                                We bring IT to life with interactive learning platforms like gamified simulations and collaborative coding environments. This makes learning not just informative, but also fun and engaging.
                             </p>
                             <a
-                                href="https://www.unwantedwitness.org/data-protection-and-privacy/"
+                                href="#"
                                 className="inline-block mt-6 px-6 py-3 bg-[#f7941f] text-black font-semibold rounded-md hover:bg-[#e4830d]"
                             >
                                 LEARN MORE

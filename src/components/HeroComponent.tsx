@@ -8,7 +8,7 @@ import Image from 'next/image';
 
 const HeroComponent: React.FC = () => {
     return (
-        <div className="relative bg-orange-50 overflow-hidden">
+        <div className="relative bg-[#f7f3eb] overflow-hidden">
             <Swiper
                 spaceBetween={0}
                 slidesPerView={1}

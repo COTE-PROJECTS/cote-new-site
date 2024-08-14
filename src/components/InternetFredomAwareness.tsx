@@ -87,7 +87,7 @@ const InternetFreedomAwareness: React.FC = () => {
         >
             {/* Background Image */}
             <Image
-                src="https://www.unwantedwitness.org/wp-content/uploads/2023/03/FreedomOfExpressionUW.jpg"
+                src="https://api1.iloveimg.com/v1/download/9swz9ck83skch2929lrl94yx1v2q0zlwqtbArpn2fmb9d46q12m39t4nw50xjcyyffnm5hsl9yAhvc8wbvqmdd1t1A1kr9jp0k4cc5f56gb7vgpj0Azw48gndvqhqtkct9xxjllyq4nzzzyq4mpfl5tkfgbzj45nq2crwnshhbcy2f65zzbq"
                 alt="Freedom of Expression" width={1920} height={1080}
                 className="absolute inset-0 w-full h-full object-cover opacity-1"
             />
@@ -98,11 +98,11 @@ const InternetFreedomAwareness: React.FC = () => {
                     <strong className="text-lg md:text-xl text-black">
                         Freedom of expression & other Internet Freedoms
                     </strong>
-                    <h1 className="text-4xl md:text-5xl font-extrabold text-black mt-4">
-                        AMPLIFYING YOUR VOICE, PRESERVING YOUR{' '}
-                        <span className="bg-[#f7941f] text-black px-2">
+                    <h1 className="text-4xl uppercase md:text-5xl font-extrabold text-black mt-4">
+                        Practical Skills Development{' '}
+                        {/* <span className="bg-[#f7941f] text-black px-2">
                             ONLINE FREEDOM
-                        </span>
+                        </span> */}
                     </h1>
                     <p className="text-lg md:text-xl text-black mt-6">
                         Through our lobbying efforts, we engage with the government and other stakeholders to promote internet freedoms and prevent censorship. As a human rights organization, we are committed to defending the rights of internet users and ensuring that they are not violated. We believe that an open and secure internet is essential for the promotion of democracy, human rights, and social justice.

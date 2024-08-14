@@ -4,7 +4,7 @@ import NavSection from './NavSection'
 import HeroComponent from './HeroComponent'
 export default function HeaderSection() {
     return (
-        <div className="min-h-screen flex flex-col">
+        <div className=" min-h-full flex flex-col">
             {/* navbar section */}
             <NavSection />
             <main className="flex-grow">
