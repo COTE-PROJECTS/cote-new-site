@@ -2,7 +2,7 @@ import React from 'react';
 
 const NewsletterSection: React.FC = () => {
     return (
-        <div className="py-16 bg-[#f7941f]">
+        <div className="py-16 bg-[#fda334]">
             <div className="relative max-w-7xl mx-auto">
                 <div className="absolute inset-x-0 top-0 transform -translate-y-1/2">
                     <div className="w-10 h-10 rounded-full bg-white mx-auto"></div>
