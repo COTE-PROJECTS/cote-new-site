@@ -137,7 +137,7 @@ const HeroComponent: React.FC = () => {
             slidesPerView={1}
             effect='fade'
             fadeEffect={{ crossFade: true }}
-            pagination={{ clickable: true }}
+            // pagination={{ clickable: true }}
             autoplay={{ delay: 5000, disableOnInteraction: false }}
             modules={[EffectFade, Pagination, Autoplay]}
             className="h-screen bg-[#f7f1e5]"

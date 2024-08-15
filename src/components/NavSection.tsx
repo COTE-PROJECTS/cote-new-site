@@ -119,10 +119,10 @@ const NavSection: React.FC = () => {
     return (
         <div>
             <header className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isScrolled ? 'bg-white' : 'bg-opacity-90'}`}>
-                <nav className="container mx-auto px-4 py-4">
+                <nav className="container mx-auto px-4 py-0">
                     <div className="flex justify-between items-center">
                         <div className="flex items-center">
-                            <Image src="/assets/logo/cote_top.png" alt="Logo" width={80} height={80} className='w-full object-cover' />
+                            <Image src="/assets/logo/cote_top.png" alt="Logo" width={70} height={70} className='w-full object-cover' />
                             {/* <span className="ml-2 text-xl font-extrabold text-black">COTE TECHNOLOGIES</span> */}
                         </div>
                         {/* Desktop Menu */}

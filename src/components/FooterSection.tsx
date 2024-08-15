@@ -3,7 +3,7 @@ import React from 'react';
 
 const FooterSection: React.FC = () => {
     return (
-        <footer id="Footer" className="bg-black text-white py-12">
+        <footer id="Footer" className="bg-black text-white py-12 mx-auto">
             <div className="container mx-auto grid grid-cols-1 md:grid-cols-4 gap-8">
                 {/* About Us Section */}
                 <div>

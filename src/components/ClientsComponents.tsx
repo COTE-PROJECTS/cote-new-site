@@ -91,7 +91,7 @@ const Partners: React.FC = () => {
                         <span className="h-1 bg-orange-500 w-20 ml-4"></span>
                     </div>
                 </div>
-                <ul className="grid sm:grid-cols-6 grid-cols-subgrid gap-y-8 justify-items-center">
+                <ul className="grid sm:grid-cols-6 grid-cols-2 gap-y-8 justify-items-center">
                     {partners.map((partner, index) => (
                         <li key={index} className="flex items-center justify-center">
                             <a href={partner.url} target="_blank" rel="noopener noreferrer">
