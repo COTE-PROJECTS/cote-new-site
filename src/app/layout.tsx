@@ -19,7 +19,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <NavSection />
-      <body className={inter.className}>{children}</body>
+      <body className={`${inter.className} bg-orange-50`}>{children}</body>
       <FooterSection />
     </html>
   );

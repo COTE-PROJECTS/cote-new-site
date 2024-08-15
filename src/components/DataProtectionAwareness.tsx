@@ -8,11 +8,11 @@ const DataProtectionSection: React.FC = () => {
                     <div className="w-full sm:w-1/2">
                         <div className="image_frame">
                             <Image
-                                src="https://api1.iloveimg.com/v1/download/9swz9ck83skch2929lrl94yx1v2q0zlwqtbArpn2fmb9d46q12m39t4nw50xjcyyffnm5hsl9yAhvc8wbvqmdd1t1A1kr9jp0k4cc5f56gb7vgpj0Azw48gndvqhqtkct9xxjllyq4nzzzyq4mpfl5tkfgbzj45nq2crwnshhbcy2f65zzbq"
+                                src="https://api2.iloveimg.com/v1/download/hmqqvsf9wrlzfrldk01tn9pwlmsnf3041h44xcmx1nsp8ftbpbz87c95x9kfdww7pAtm22r7571xvbynrAvwftch2gApz61j1914knc3wvpvzngklwz318gvhhnlyk9tft7vnmjv5yf8tpgz46AAhgnpcwx6vdyxgn61bww5njbz4f73fbb1"
                                 alt="DATA-PROTECTION-TRAINING"
                                 width={600}
                                 height={600}
-                                className="max-w-[30rem] h-full"
+                                className="w-[30rem] h-auto"
                             />
                         </div>
                     </div>

@@ -1,5 +1,6 @@
 
 
+import Image from 'next/image';
 import React from 'react';
 
 const DrivingChangeComponent: React.FC = () => {
@@ -23,8 +24,10 @@ const DrivingChangeComponent: React.FC = () => {
                 </a>
             </div>
             <div className="w-full md:w-1/2 flex justify-center items-center p-8">
-                <img
-                    src="https://www.unwantedwitness.org/wp-content/uploads/2023/03/Screenshot-2023-03-28-at-14.15.32.png"
+                <Image
+                    width={600}
+                    height={600}
+                    src="https://api2.iloveimg.com/v1/download/55y7mqzn2g5p30lkxkkfmkw0shrvxcczlpy4862yn5zpd0g6h12x6nsyk0hh2tw7q6l0jhkr8mnt0894lr1y9bkz5xdl9qgtsm7hcsyn1jnyk09pbycxgyqr8418l42spAmsvz695h15vdA03nx8pmgb0A0fmlmrh86rlyzdAtksrxjqh68q"
                     alt="Policy and Legal Reform"
                     className="max-w-[30rem] h-auto"
                 />

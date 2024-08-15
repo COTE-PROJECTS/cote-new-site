@@ -1,7 +1,6 @@
-// export default NavSection;
 "use client"
 import React, { useState, useEffect, useRef } from 'react';
-import Image from 'next/image';
+import { usePathname, useRouter } from 'next/navigation'; // Import for route handling
 
 interface MenuItem {
     name: string;
@@ -9,66 +8,23 @@ interface MenuItem {
     children?: MenuItem[];
 }
 
-
 const menuItems: MenuItem[] = [
     { name: 'HOME', href: '/' },
     {
-        name: 'Solutions',
-        href: '#about',
+        name: 'Our Core Team',
+        href: '/team',
     },
     {
         name: "Who we are",
         href: "/about",
     },
-    // {
-    //     name: 'WHAT WE DO',
-    //     children: [
-    //         {
-    //             name: 'Campaigns',
-    //             // children: [
-    //             //     { name: 'Beeramu', href: 'https://www.unwantedwitness.org/beeramu/' },
-    //             //     { name: 'Yes To Compliance', href: 'https://www.unwantedwitness.org/yes-to-compliance/' },
-    //             //     { name: 'Tosiliika', href: 'https://www.unwantedwitness.org/tosiliika/' },
-    //             //     { name: 'There\'s a Spy in your Pocket', href: 'https://www.unwantedwitness.org/pocket-spy/' }
-    //             // ]
-    //         },
-    //         // {
-    //         //     name: 'Digital Inclusion and Innovation',
-    //         //     href: 'https://www.unwantedwitness.org/digital-inclusion-and-innovation/',
-    //         //     children: [
-    //         //         {
-    //         //             name: 'Amplified',
-    //         //             href: 'https://www.unwantedwitness.org/amplified/',
-    //         //             children: [
-    //         //                 { name: 'Digital Skills Training', href: 'https://www.unwantedwitness.org/digital-skills-training/' },
-    //         //                 { name: 'Digital Rights Awareness', href: 'https://www.unwantedwitness.org/digital-rights-awareness/' }
-    //         //             ]
-    //         //         },
-    //         //         { name: 'Cyber Security', href: 'https://www.unwantedwitness.org/cyber-security/' },
-    //         //         { name: 'Open Digital Tools', href: 'https://www.unwantedwitness.org/open-digital-tools/' },
-    //         //         { name: 'Online Gender-Based Violence', href: 'https://www.unwantedwitness.org/online-gender-based-violence/' }
-    //         //     ]
-    //         // },
-    //         {
-    //             name: 'Data Protection',
-    //             href: 'https://www.unwantedwitness.org/data-protection-and-privacy/',
-    //             children: [
-    //                 { name: 'Data Protection Training', href: 'https://www.unwantedwitness.org/training/' },
-    //                 { name: 'Privacy Symposium Africa', href: 'https://www.unwantedwitness.org/privacy-symposium-2/' },
-    //                 { name: 'Privacy Scorecard Report', href: 'https://www.unwantedwitness.org/privacy-scorecard-2/' },
-    //                 { name: 'UW Privacy Moot Competition', href: 'https://www.unwantedwitness.org/uwmoot/' }
-    //             ]
-    //         },
-    //         //     { name: 'Digital Identity', href: 'https://www.unwantedwitness.org/digital-identity/' },
-    //         //     { name: 'Policy & Legal Reform', href: 'https://www.unwantedwitness.org/policy-legal-reform/' },
-    //         //     { name: 'Freedom of Expression', href: 'https://www.unwantedwitness.org/freedom-of-expression/' },
-    //         //     { name: 'Legal Aid', href: 'https://www.unwantedwitness.org/legal-aid-2/' },
-    //         //     { name: 'Research & Advocacy', href: '' }
-    //     ]
-    // },
-    { name: 'showcase', href: '#' },
-    { name: 'blogs & news', href: '#' },
-    { name: 'contact us', href: '/contact' }
+    {
+        name: "What we do",
+        href: "/whatwedo",
+    },
+    { name: 'Showcase', href: '/showcase' },
+    { name: 'Blogs & News', href: '/blogs' },
+    { name: 'Contact Us', href: '/contact' }
 ];
 
 const DropdownMenu: React.FC<{ items: MenuItem[], depth?: number }> = ({ items, depth = 0 }) => {
@@ -123,11 +79,15 @@ const DropdownMenu: React.FC<{ items: MenuItem[], depth?: number }> = ({ items, 
 };
 
 const NavItem: React.FC<{ item: MenuItem }> = ({ item }) => {
+    const router = useRouter();
+    const pathname = usePathname();
+    const isActive = pathname === item.href;
+
     return (
         <li className="relative group">
             <a
                 href={item.href}
-                className="text-gray-700 uppercase hover:text-orange-500 px-3 py-2 rounded-md text-sm font-medium"
+                className={`text-sm font-medium uppercase px-3 py-2 rounded-md transition-all duration-300 ${isActive ? 'text-orange-500 border-b-4 border-orange-500' : 'text-gray-700 hover:text-orange-500'}`}
             >
                 {item.name}
             </a>

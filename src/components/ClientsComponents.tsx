@@ -2,83 +2,83 @@ import React from 'react';
 
 const partners = [
     {
-        name: 'Omidyar Network',
-        url: 'https://omidyar.com/',
-        imgSrc: 'https://www.unwantedwitness.org/wp-content/uploads/2021/06/Omidyar_Network_Logo_Horizontal_Color_RGB-150x18.png',
+        name: 'TAPA (Toil And Promote Agriculture)',
+        url: 'https://www.tapagric.org',
+        imgSrc: 'https://www.tapagric.org/_next/image?url=%2Fassets%2Fimages%2Flogo.png&w=1080&q=75',
         imgAlt: 'Omidyar Network Logo',
     },
     {
-        name: 'DHRLab',
+        name: 'Mooziki',
         url: '#',
-        imgSrc: 'https://www.unwantedwitness.org/wp-content/uploads/2021/06/DHRLab-logo-672x572-1-88x75-1.png',
+        imgSrc: '/assets/pngs/p3.png',
         imgAlt: 'DHRLab Logo',
     },
     {
-        name: 'APC',
+        name: 'HOLI SPOTLESS',
         url: '#',
-        imgSrc: 'https://www.unwantedwitness.org/wp-content/uploads/2020/12/logo.png',
+        imgSrc: '/assets/pngs/p4.jpg',
         imgAlt: 'APC Logo',
     },
     {
-        name: 'Media Defence',
-        url: '#',
-        imgSrc: 'https://www.unwantedwitness.org/wp-content/uploads/2020/11/download.jpeg',
-        imgAlt: 'Media Defence Logo',
+        name: 'MARITIME SHIPPING',
+        url: 'https://www.maritimeshipping-uganda.com/',
+        imgSrc: 'https://www.maritimeshipping-uganda.com/_next/image?url=%2Fassets%2Fimg%2Flogo.png&w=256&q=75',
+        imgAlt: 'Martimeshipping',
     },
     {
-        name: 'Kios',
+        name: 'Kemet holdings ltd',
         url: '#',
-        imgSrc: 'https://www.unwantedwitness.org/wp-content/uploads/2018/12/kios-en-red.png',
+        imgSrc: '/assets/pngs/p6.jpg',
         imgAlt: 'Kios Logo',
     },
     {
-        name: 'US Mission',
+        name: 'JOJO"s Farm',
         url: '#',
-        imgSrc: 'https://www.unwantedwitness.org/wp-content/uploads/2018/12/US-mission.png',
+        imgSrc: '/assets/pngs/p5.jpg',
         imgAlt: 'US Mission Logo',
     },
-    {
-        name: 'OISEA',
-        url: '#',
-        imgSrc: 'https://www.unwantedwitness.org/wp-content/uploads/2018/12/OISEA.png',
-        imgAlt: 'OISEA Logo',
-    },
-    {
-        name: 'HIVOS',
-        url: '#',
-        imgSrc: 'https://www.unwantedwitness.org/wp-content/uploads/2021/06/HIVOS-2-672x390-1-129x75-1.jpg',
-        imgAlt: 'HIVOS Logo',
-    },
-    {
-        name: 'Internews',
-        url: '#',
-        imgSrc: 'https://www.unwantedwitness.org/wp-content/uploads/2018/12/Internews.png',
-        imgAlt: 'Internews Logo',
-    },
-    {
-        name: 'CRD',
-        url: '#',
-        imgSrc: 'https://www.unwantedwitness.org/wp-content/uploads/2018/12/CRD.png',
-        imgAlt: 'CRD Logo',
-    },
-    {
-        name: 'DW Akademie',
-        url: 'https://www.dw.com',
-        imgSrc: 'https://www.unwantedwitness.org/wp-content/uploads/2021/06/DW-Akademie-1-133x75.jpeg',
-        imgAlt: 'DW Akademie Logo',
-    },
-    {
-        name: 'Privacy International',
-        url: '#',
-        imgSrc: 'https://www.unwantedwitness.org/wp-content/uploads/2021/06/PI-Privacy-International-RGB-Solid-150x42.png',
-        imgAlt: 'Privacy International Logo',
-    },
-    {
-        name: 'Canada',
-        url: 'https://www.canadainternational.gc.ca/kenya/contact-uganda_ouganda-contactez.aspx?lang=eng',
-        imgSrc: 'https://www.unwantedwitness.org/wp-content/uploads/2021/09/T130-Canada-150x46.png',
-        imgAlt: 'Canada Logo',
-    },
+    // {
+    //     name: 'OISEA',
+    //     url: '#',
+    //     imgSrc: 'https://www.unwantedwitness.org/wp-content/uploads/2018/12/OISEA.png',
+    //     imgAlt: 'OISEA Logo',
+    // },
+    // {
+    //     name: 'HIVOS',
+    //     url: '#',
+    //     imgSrc: 'https://www.unwantedwitness.org/wp-content/uploads/2021/06/HIVOS-2-672x390-1-129x75-1.jpg',
+    //     imgAlt: 'HIVOS Logo',
+    // },
+    // {
+    //     name: 'Internews',
+    //     url: '#',
+    //     imgSrc: 'https://www.unwantedwitness.org/wp-content/uploads/2018/12/Internews.png',
+    //     imgAlt: 'Internews Logo',
+    // },
+    // {
+    //     name: 'CRD',
+    //     url: '#',
+    //     imgSrc: 'https://www.unwantedwitness.org/wp-content/uploads/2018/12/CRD.png',
+    //     imgAlt: 'CRD Logo',
+    // },
+    // {
+    //     name: 'DW Akademie',
+    //     url: 'https://www.dw.com',
+    //     imgSrc: 'https://www.unwantedwitness.org/wp-content/uploads/2021/06/DW-Akademie-1-133x75.jpeg',
+    //     imgAlt: 'DW Akademie Logo',
+    // },
+    // {
+    //     name: 'Privacy International',
+    //     url: '#',
+    //     imgSrc: 'https://www.unwantedwitness.org/wp-content/uploads/2021/06/PI-Privacy-International-RGB-Solid-150x42.png',
+    //     imgAlt: 'Privacy International Logo',
+    // },
+    // {
+    //     name: 'Canada',
+    //     url: 'https://www.canadainternational.gc.ca/kenya/contact-uganda_ouganda-contactez.aspx?lang=eng',
+    //     imgSrc: 'https://www.unwantedwitness.org/wp-content/uploads/2021/09/T130-Canada-150x46.png',
+    //     imgAlt: 'Canada Logo',
+    // },
 ];
 
 const Partners: React.FC = () => {
@@ -91,12 +91,12 @@ const Partners: React.FC = () => {
                         <span className="h-1 bg-orange-500 w-20 ml-4"></span>
                     </div>
                 </div>
-                <ul className="grid grid-cols-4 gap-y-8 justify-items-center">
+                <ul className="grid sm:grid-cols-6 grid-cols-subgrid gap-y-8 justify-items-center">
                     {partners.map((partner, index) => (
                         <li key={index} className="flex items-center justify-center">
                             <a href={partner.url} target="_blank" rel="noopener noreferrer">
                                 <img
-                                    className="mx-auto scale-with-grid max-h-16"
+                                    className="mx-auto scale-with-grid max-h-20"
                                     src={partner.imgSrc}
                                     alt={partner.imgAlt}
                                     loading="lazy"

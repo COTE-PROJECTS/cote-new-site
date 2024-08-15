@@ -25,8 +25,8 @@ export default function Home() {
       <InternetFreedomAwareness />
       <DrivingChangeComponent />
       <DigitalInclusionSection />
-      <AdvocacyResearchSection />
-      <LegalAidComponent />
+      {/* <AdvocacyResearchSection /> */}
+      {/* <LegalAidComponent /> */}
       <SubscriptionComponent />
       <ArticleComponents />
       <Partners />
