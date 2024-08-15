@@ -17,54 +17,58 @@ const menuItems: MenuItem[] = [
         href: '#about',
     },
     {
-        name: 'WHAT WE DO',
-        children: [
-            {
-                name: 'Campaigns',
-                // children: [
-                //     { name: 'Beeramu', href: 'https://www.unwantedwitness.org/beeramu/' },
-                //     { name: 'Yes To Compliance', href: 'https://www.unwantedwitness.org/yes-to-compliance/' },
-                //     { name: 'Tosiliika', href: 'https://www.unwantedwitness.org/tosiliika/' },
-                //     { name: 'There\'s a Spy in your Pocket', href: 'https://www.unwantedwitness.org/pocket-spy/' }
-                // ]
-            },
-            // {
-            //     name: 'Digital Inclusion and Innovation',
-            //     href: 'https://www.unwantedwitness.org/digital-inclusion-and-innovation/',
-            //     children: [
-            //         {
-            //             name: 'Amplified',
-            //             href: 'https://www.unwantedwitness.org/amplified/',
-            //             children: [
-            //                 { name: 'Digital Skills Training', href: 'https://www.unwantedwitness.org/digital-skills-training/' },
-            //                 { name: 'Digital Rights Awareness', href: 'https://www.unwantedwitness.org/digital-rights-awareness/' }
-            //             ]
-            //         },
-            //         { name: 'Cyber Security', href: 'https://www.unwantedwitness.org/cyber-security/' },
-            //         { name: 'Open Digital Tools', href: 'https://www.unwantedwitness.org/open-digital-tools/' },
-            //         { name: 'Online Gender-Based Violence', href: 'https://www.unwantedwitness.org/online-gender-based-violence/' }
-            //     ]
-            // },
-            {
-                name: 'Data Protection',
-                href: 'https://www.unwantedwitness.org/data-protection-and-privacy/',
-                children: [
-                    { name: 'Data Protection Training', href: 'https://www.unwantedwitness.org/training/' },
-                    { name: 'Privacy Symposium Africa', href: 'https://www.unwantedwitness.org/privacy-symposium-2/' },
-                    { name: 'Privacy Scorecard Report', href: 'https://www.unwantedwitness.org/privacy-scorecard-2/' },
-                    { name: 'UW Privacy Moot Competition', href: 'https://www.unwantedwitness.org/uwmoot/' }
-                ]
-            },
-            //     { name: 'Digital Identity', href: 'https://www.unwantedwitness.org/digital-identity/' },
-            //     { name: 'Policy & Legal Reform', href: 'https://www.unwantedwitness.org/policy-legal-reform/' },
-            //     { name: 'Freedom of Expression', href: 'https://www.unwantedwitness.org/freedom-of-expression/' },
-            //     { name: 'Legal Aid', href: 'https://www.unwantedwitness.org/legal-aid-2/' },
-            //     { name: 'Research & Advocacy', href: '' }
-        ]
+        name: "Who we are",
+        href: "/about",
     },
+    // {
+    //     name: 'WHAT WE DO',
+    //     children: [
+    //         {
+    //             name: 'Campaigns',
+    //             // children: [
+    //             //     { name: 'Beeramu', href: 'https://www.unwantedwitness.org/beeramu/' },
+    //             //     { name: 'Yes To Compliance', href: 'https://www.unwantedwitness.org/yes-to-compliance/' },
+    //             //     { name: 'Tosiliika', href: 'https://www.unwantedwitness.org/tosiliika/' },
+    //             //     { name: 'There\'s a Spy in your Pocket', href: 'https://www.unwantedwitness.org/pocket-spy/' }
+    //             // ]
+    //         },
+    //         // {
+    //         //     name: 'Digital Inclusion and Innovation',
+    //         //     href: 'https://www.unwantedwitness.org/digital-inclusion-and-innovation/',
+    //         //     children: [
+    //         //         {
+    //         //             name: 'Amplified',
+    //         //             href: 'https://www.unwantedwitness.org/amplified/',
+    //         //             children: [
+    //         //                 { name: 'Digital Skills Training', href: 'https://www.unwantedwitness.org/digital-skills-training/' },
+    //         //                 { name: 'Digital Rights Awareness', href: 'https://www.unwantedwitness.org/digital-rights-awareness/' }
+    //         //             ]
+    //         //         },
+    //         //         { name: 'Cyber Security', href: 'https://www.unwantedwitness.org/cyber-security/' },
+    //         //         { name: 'Open Digital Tools', href: 'https://www.unwantedwitness.org/open-digital-tools/' },
+    //         //         { name: 'Online Gender-Based Violence', href: 'https://www.unwantedwitness.org/online-gender-based-violence/' }
+    //         //     ]
+    //         // },
+    //         {
+    //             name: 'Data Protection',
+    //             href: 'https://www.unwantedwitness.org/data-protection-and-privacy/',
+    //             children: [
+    //                 { name: 'Data Protection Training', href: 'https://www.unwantedwitness.org/training/' },
+    //                 { name: 'Privacy Symposium Africa', href: 'https://www.unwantedwitness.org/privacy-symposium-2/' },
+    //                 { name: 'Privacy Scorecard Report', href: 'https://www.unwantedwitness.org/privacy-scorecard-2/' },
+    //                 { name: 'UW Privacy Moot Competition', href: 'https://www.unwantedwitness.org/uwmoot/' }
+    //             ]
+    //         },
+    //         //     { name: 'Digital Identity', href: 'https://www.unwantedwitness.org/digital-identity/' },
+    //         //     { name: 'Policy & Legal Reform', href: 'https://www.unwantedwitness.org/policy-legal-reform/' },
+    //         //     { name: 'Freedom of Expression', href: 'https://www.unwantedwitness.org/freedom-of-expression/' },
+    //         //     { name: 'Legal Aid', href: 'https://www.unwantedwitness.org/legal-aid-2/' },
+    //         //     { name: 'Research & Advocacy', href: '' }
+    //     ]
+    // },
     { name: 'showcase', href: '#' },
     { name: 'blogs & news', href: '#' },
-    { name: 'contact us', href: '#' }
+    { name: 'contact us', href: '/contact' }
 ];
 
 const DropdownMenu: React.FC<{ items: MenuItem[], depth?: number }> = ({ items, depth = 0 }) => {

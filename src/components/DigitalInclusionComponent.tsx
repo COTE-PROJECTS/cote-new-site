@@ -9,7 +9,7 @@ const DigitalInclusionSection: React.FC = () => {
         >
             {/* Background Image */}
             <Image
-                src="https://www.unwantedwitness.org/wp-content/uploads/2023/03/WhatsApp-Image-2023-02-24-at-09.26.46.jpeg"
+                src="https://api2.iloveimg.com/v1/download/g0v00md62x402zpmhy22m6gmry6tzAl2qygvj0myg8nnp554q26854x9c3A88hyv2jAmz48drbpf7mp90r2jj0fqq4dgA6t5j4cb3c6z40257y5Aq94qnpq23kmvfgbt8q7p7A4dztkfxb8r2hd3p4rktyl4lth2rg2q5A9vdcg40gvjccv1"
                 alt="Digital Inclusion" width={1920} height={1080}
                 className="absolute inset-0 w-full h-full object-cover opacity-1"
             />
@@ -19,15 +19,16 @@ const DigitalInclusionSection: React.FC = () => {
                     <strong className="text-lg md:text-xl text-black">
                         Digital Inclusion
                     </strong>
-                    <h1 className="text-4xl md:text-5xl font-extrabold text-black mt-4">
-                        DIGITAL{' '}
+                    <h1 className="text-4xl uppercase md:text-5xl font-extrabold text-black mt-4">
+                        Unleash Your {' '}
                         <span className="bg-[#f7941f] text-black px-2">
-                            INCLUSION
+                            Tech Potential
                         </span>{' '}
-                        FOR ALL
+
                     </h1>
                     <p className="text-lg md:text-xl text-black mt-6">
-                        Our Digital Inclusion and Innovation Program is focused on promoting digital inclusion in Uganda and beyond, particularly among marginalized communities, and fostering innovation in the digital space. The program aims to bridge the digital divide, increase access to digital technologies, and promote the use of digital platforms for social and economic development.
+                        Our Hands-On IT Training blends STEM principles with practical skills for young minds. Master coding, software, hardware & more in a fun, engaging environment.
+                        Launch your tech future today!
                     </p>
                     <a
                         href="https://www.unwantedwitness.org/digital-inclusion-and-innovation/"
