@@ -1,7 +1,7 @@
 "use client"
 import React, { useState, useEffect, useRef } from 'react';
 import { usePathname } from 'next/navigation'; // Import for route handling
-
+import Image from "next/image";
 interface MenuItem {
     name: string;
     href?: string;
@@ -122,8 +122,8 @@ const NavSection: React.FC = () => {
                 <nav className="container mx-auto px-4 py-4">
                     <div className="flex justify-between items-center">
                         <div className="flex items-center">
-                            {/* <Image src="https://api.placeholder/50/50" alt="Logo" width={50} height={50} /> */}
-                            <span className="ml-2 text-xl font-extrabold text-black">COTE TECHNOLOGIES</span>
+                            <Image src="/assets/logo/cote_top.png" alt="Logo" width={80} height={80} className='w-full object-cover' />
+                            {/* <span className="ml-2 text-xl font-extrabold text-black">COTE TECHNOLOGIES</span> */}
                         </div>
                         {/* Desktop Menu */}
                         <ul className="hidden md:flex space-x-1">
