@@ -1,6 +1,6 @@
 "use client"
 import React, { useState, useEffect, useRef } from 'react';
-import { usePathname, useRouter } from 'next/navigation'; // Import for route handling
+import { usePathname } from 'next/navigation'; // Import for route handling
 
 interface MenuItem {
     name: string;
@@ -23,7 +23,7 @@ const menuItems: MenuItem[] = [
         href: "/whatwedo",
     },
     { name: 'Showcase', href: '/showcase' },
-    { name: 'Blogs & News', href: '/blogs' },
+    // { name: 'Blogs & News', href: '/blogs' },
     { name: 'Contact Us', href: '/contact' }
 ];
 
@@ -79,7 +79,6 @@ const DropdownMenu: React.FC<{ items: MenuItem[], depth?: number }> = ({ items, 
 };
 
 const NavItem: React.FC<{ item: MenuItem }> = ({ item }) => {
-    const router = useRouter();
     const pathname = usePathname();
     const isActive = pathname === item.href;
 

@@ -10,12 +10,12 @@ interface TeamMember {
 }
 
 const teamMembers: TeamMember[] = [
-    { name: "BAHINDI EMMANUEL", role: "CEO, Director", image: "/images/sony-madison.jpg" },
-    { name: "MUGAMBA BRUNO", role: "CTO, Director", image: "/images/hary-warth.jpg" },
-    { name: "MUGASA TUHUMWIRE", role: "Chairman, Director", image: "/images/jenny-hobb.jpg" },
-    { name: "NAMIIRO HABIIBAH", role: "General Manager", image: "/images/johny-smith.jpg" },
-    { name: "CAROS HERBERT", role: "IT Director", image: "/images/mary-james.jpg" },
-    { name: "MULIKATETE ANGELLA", role: "Head Of Programs", image: "/images/thomas-henry.jpg" },
+    { name: "BAHINDI EMMANUEL", role: "CEO, Director", image: "/assets/team/team01.png" },
+    { name: "MUGAMBA BRUNO", role: "CTO, Director", image: "/assets/team/team02.png" },
+    { name: "MUGASA TUHUMWIRE", role: "Chairman, Director", image: "/assets/team/team03.png" },
+    { name: "NAMIIRO HABIIBAH", role: "General Manager", image: "/assets/team/team06.png" },
+    { name: "CAROS HERBERT", role: "IT Director", image: "/assets/team/team05.png" },
+    { name: "MULIKATETE ANGELLA", role: "Head Of Programs", image: "/assets/team/team04.png" },
     // { name: "Sally Watt", role: "Designer", image: "/images/sally-watt.jpg" },
 ];
 
