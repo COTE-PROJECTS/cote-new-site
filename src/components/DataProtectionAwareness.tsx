@@ -1,16 +1,18 @@
 import React from 'react';
-
+import Image from 'next/image';
 const DataProtectionSection: React.FC = () => {
     return (
         <div className="py-16 bg-white">
             <div className="max-w-7xl mx-auto">
                 <div className="flex flex-wrap items-center">
-                    <div className="w-full md:w-1/2">
+                    <div className="w-full sm:w-1/2">
                         <div className="image_frame">
-                            <img
-                                src="https://www.unwantedwitness.org/wp-content/uploads/2024/06/DATA-PROTECTION-TRAINING.webp"
+                            <Image
+                                src="https://api1.iloveimg.com/v1/download/9swz9ck83skch2929lrl94yx1v2q0zlwqtbArpn2fmb9d46q12m39t4nw50xjcyyffnm5hsl9yAhvc8wbvqmdd1t1A1kr9jp0k4cc5f56gb7vgpj0Azw48gndvqhqtkct9xxjllyq4nzzzyq4mpfl5tkfgbzj45nq2crwnshhbcy2f65zzbq"
                                 alt="DATA-PROTECTION-TRAINING"
-                                className="w-full h-auto"
+                                width={600}
+                                height={600}
+                                className="w-full h-full"
                             />
                         </div>
                     </div>

@@ -7,9 +7,9 @@ const DrivingChangeComponent: React.FC = () => {
         <section className="py-16 bg-[#f1f1f2] flex flex-col md:flex-row items-center justify-between">
             <div className="w-full md:w-1/2 p-8">
                 <strong className="text-lg md:text-xl text-black">Policy and Legal Reform</strong>
-                <h1 className="text-4xl md:text-5xl font-extrabold text-black mt-4">
-                    DRIVING CHANGE THROUGH{' '}
-                    <span className="bg-[#f7941f] text-black px-2">POLICY AND LEGAL</span> REFORM
+                <h1 className="text-4xl md:text-5xl uppercase font-extrabold text-black mt-4">
+                    Mentorship and Support{' '}
+                    {/* <span className="bg-[#f7941f] text-black px-2">POLICY AND LEGAL</span> REFORM */}
                 </h1>
                 <p className="text-lg md:text-xl text-black mt-6">
                     We work with other organizations and stakeholders to advocate for policy and legal reforms that promote digital rights and freedoms in Uganda. We also monitor the implementation of existing laws and policies to ensure that they are aligned with international human rights standards.
