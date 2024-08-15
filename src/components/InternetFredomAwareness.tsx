@@ -20,10 +20,10 @@ const InternetFreedomAwareness: React.FC = () => {
                         Freedom of expression & other Internet Freedoms
                     </strong>
                     <h1 className="text-4xl uppercase md:text-5xl font-extrabold text-black mt-4">
-                        Practical Skills Development{' '}
-                        {/* <span className="bg-[#f7941f] text-black px-2">
-                            ONLINE FREEDOM
-                        </span> */}
+                        Practical Skills{' '}
+                        <span className="bg-[#f7941f] text-black px-2">
+                            Development
+                        </span>
                     </h1>
                     <p className="text-lg md:text-xl text-black mt-6">
                         We go beyond theory with hands-on training that equips students with in-demand skills. Our curriculum includes building websites, creating mobile apps, and troubleshooting real-world IT problems.

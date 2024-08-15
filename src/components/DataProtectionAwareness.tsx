@@ -12,7 +12,7 @@ const DataProtectionSection: React.FC = () => {
                                 alt="DATA-PROTECTION-TRAINING"
                                 width={600}
                                 height={600}
-                                className="w-full h-full"
+                                className="max-w-[30rem] h-full"
                             />
                         </div>
                     </div>

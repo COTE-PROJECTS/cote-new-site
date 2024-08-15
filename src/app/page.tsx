@@ -14,7 +14,7 @@ import React from "react";
 
 export default function Home() {
   return (
-    <>
+    <main className="mx-auto">
       <HeaderSection />
       <NewsletterSignup />
       <DataProtectionAwareness />
@@ -26,6 +26,6 @@ export default function Home() {
       <SubscriptionComponent />
       <ArticleComponents />
       <Partners />
-    </>
+    </main>
   );
 }
