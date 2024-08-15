@@ -3,6 +3,7 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import FooterSection from "@/components/FooterSection";
 import NavSection from "@/components/NavSection";
+import { Html } from "next/document";
 
 const inter = Inter({ subsets: ["greek", "cyrillic", "cyrillic-ext", "latin", "latin-ext", "vietnamese"] });
 
@@ -20,10 +21,13 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
+
     <html lang="en">
+      <link href="https://fonts.cdnfonts.com/css/poppins" rel="stylesheet" />
       <NavSection />
       <body className={`${inter.className} bg-orange-50`}>{children}</body>
       <FooterSection />
     </html>
+
   );
 }

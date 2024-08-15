@@ -1,6 +1,7 @@
 "use client"
 import { useEffect, useState } from 'react';
 import { motion } from 'framer-motion';
+import Image from "next/image";
 
 const projects = [
     { id: 1, title: 'Maritime Shipping Company', description: 'A mobile app that aids one to get a loan.', image: '/assets/projects/maritimeshipping-uganda.png' },
@@ -32,7 +33,7 @@ const ProjectsPage: React.FC = () => {
                         animate={{ opacity: loaded ? 1 : 0, y: 0 }}
                         transition={{ delay: index * 0.2 }}
                     >
-                        <img src={project.image} alt={project.title} className="w-full h-48 object-cover" />
+                        <Image width={600} height={600} src={project.image} alt={project.title} className="w-full h-48 object-cover" />
                         <div className="p-6">
                             <h2 className="text-2xl font-bold text-orange-600">{project.title}</h2>
                             <p className="text-gray-700 mt-4">{project.description}</p>

@@ -1,99 +1,125 @@
 "use client"
 import React from 'react';
+import { motion } from 'framer-motion';
 
 const FooterSection: React.FC = () => {
+    const containerVariants = {
+        hidden: { opacity: 0 },
+        visible: {
+            opacity: 1,
+            transition: {
+                staggerChildren: 0.1,
+                delayChildren: 0.3
+            }
+        }
+    };
+
+    const itemVariants = {
+        hidden: { y: 20, opacity: 0 },
+        visible: {
+            y: 0,
+            opacity: 1,
+            transition: {
+                type: "spring",
+                stiffness: 100
+            }
+        }
+    };
+
     return (
-        <footer id="Footer" className="bg-black text-white py-12 mx-auto">
-            <div className="container mx-auto grid grid-cols-1 md:grid-cols-4 gap-8">
-                {/* About Us Section */}
-                <div>
-                    <h4 className="text-lg font-semibold">About us</h4>
-                    <div className="bg-orange-500 h-1 w-20 my-2"></div>
-                    <p className="mb-4 text-gray-400">
-                        COTE (Center Of Technology Evolution), A digitally empowered young people, equipped with practical IT skills from foundational literacy to advanced programming across Africa by 2044.
-                    </p>
-                    <p className="text-gray-400">Follow us on our social media</p>
-                    <div className="flex space-x-3 text-white mt-2">
-                        <a href="https://www.facebook.com/UnwantedWitnessUg" className="hover:text-orange-500">
-                            <i className="fab fa-facebook-f"></i>
-                        </a>
-                        <a href="https://twitter.com/UnwantedWitness" className="hover:text-orange-500">
-                            <i className="fab fa-twitter"></i>
-                        </a>
-                        <a href="https://www.linkedin.com/company/unwanted-witness/" className="hover:text-orange-500">
-                            <i className="fab fa-linkedin-in"></i>
-                        </a>
-                        <a href="https://www.instagram.com/unwantedwitnessug/" className="hover:text-orange-500">
-                            <i className="fab fa-instagram"></i>
-                        </a>
-                        <a href="https://www.youtube.com/channel/UCiMoZz2XeyCwVRFaRBTI8dw" className="hover:text-orange-500">
-                            <i className="fab fa-youtube"></i>
-                        </a>
-                    </div>
-                    {/* <div className="mt-4">
-                        <a href="https://www.ngosource.org/about-equivalency-determination-on-file-badge?ref=https%3A%2F%2Ftpoug.org%2F">
-                            <img src="https://www.ngosource.org/sites/default/files/ngos_ed_on_file_widget.png" alt="NGOsource Equivalency Determination on File" className="w-32" />
-                        </a>
-                    </div> */}
-                </div>
+        <footer id="Footer" className="bg-black text-white py-12">
+            <motion.div
+                className="mx-auto px-4"
+                variants={containerVariants}
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ once: true }}
+            >
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+                    {/* About Us Section */}
+                    <motion.div variants={itemVariants}>
+                        <h4 className="text-lg font-semibold">About us</h4>
+                        <div className="bg-orange-500 h-1 w-20 my-2"></div>
+                        <p className="mb-4 text-gray-400">
+                            COTE (Center Of Technology Evolution), A digitally empowered young people, equipped with practical IT skills from foundational literacy to advanced programming across Africa by 2044.
+                        </p>
+                        <p className="text-gray-400">Follow us on our social media</p>
+                        <div className="flex space-x-3 text-white mt-2">
+                            {['facebook-f', 'twitter', 'linkedin-in', 'instagram', 'youtube'].map((icon, index) => (
+                                <motion.a
+                                    key={icon}
+                                    href="#"
+                                    className="hover:text-orange-500 transition-colors duration-300"
+                                    whileHover={{ scale: 1.2 }}
+                                    whileTap={{ scale: 0.9 }}
+                                >
+                                    <i className={`fab fa-${icon}`}></i>
+                                </motion.a>
+                            ))}
+                        </div>
+                    </motion.div>
 
-                {/* Quick Links Section */}
-                <div>
-                    <h4 className="text-lg font-semibold">Quick links</h4>
-                    <div className="bg-orange-500 h-1 w-20 my-2"></div>
-                    <ul className="space-y-4 text-gray-400">
-                        <li><a href="#" className="hover:text-orange-500">Privacy policy</a></li>
-                        <li><a href="/about" className="hover:text-orange-500">About us</a></li>
-                        <li><a href="/contact" className="hover:text-orange-500">Contact us</a></li>
-                        <li><a href="#" className="hover:text-orange-500">Insights</a></li>
-                        <li><a href="#" className="hover:text-orange-500">Career</a></li>
-                    </ul>
-                </div>
-
-                {/* What We Do Section */}
-                <div>
-                    <h4 className="text-lg font-semibold">What we do</h4>
-                    <div className="bg-orange-500 h-1 w-20 my-2"></div>
-                    <ul className="space-y-4 text-gray-400">
-                        <li><a href="#" className="hover:text-orange-500">Digital Marketing</a></li>
-                        <li><a href="#" className="hover:text-orange-500">Web Development</a></li>
-                        <li><a href="#" className="hover:text-orange-500">Mobile Application Development</a></li>
-                        <li><a href="#" className="hover:text-orange-500">IT Practical Skill training</a></li>
-                    </ul>
-                </div>
-
-                {/* Let's Connect Section */}
-                <div>
-                    <h4 className="text-lg font-semibold">Let’s connect</h4>
-                    <div className="bg-orange-500 h-1 w-20 my-2"></div>
-                    <p className="text-gray-400"><b>Center Of Technology Evolution (COTE)</b></p>
-                    <p className="text-gray-400">
-                        Kawaala, Kampala, Uganda.
-                    </p>
-                    <p className="text-gray-400">
-                        <strong>Mob:</strong> +256-773165989<br />
-                        <strong>Email:</strong> <a href="mailto:info@coteug.com" className="hover:underline hover:text-orange-500">info@coteug.com</a>
-                    </p>
-                </div>
-            </div>
-
-            {/* Footer Bottom Section */}
-            <div className="bg-orange-700 py-4 mt-8">
-                <div className="container mx-auto flex flex-col md:flex-row justify-between items-center">
-                    <div className="text-sm text-gray-100">
-                        © {new Date().getFullYear()} Center Of Technology Evolution (COTE), All Rights Reserved.
-                    </div>
-                    {/* <nav>
-                        <ul className="flex space-x-4 text-gray-400">
-                            <li><a href="/" className="hover:text-orange-500">HOME</a></li>
-                            <li><a href="/about" className="hover:text-orange-500">ABOUT</a></li>
-                            <li><a href="" className="hover:text-orange-500">PRIVACY POLICY</a></li>
-                            <li><a href="https://www.unwantedwitness.org/resources/" className="hover:text-orange-500">RESOURCES</a></li>
-                            <li><a href="https://www.unwantedwitness.org/contact-us-3/" className="hover:text-orange-500">CONTACT US</a></li>
+                    {/* Quick Links Section */}
+                    <motion.div variants={itemVariants}>
+                        <h4 className="text-lg font-semibold">Quick links</h4>
+                        <div className="bg-orange-500 h-1 w-20 my-2"></div>
+                        <ul className="space-y-2 text-gray-400">
+                            {['Privacy policy', 'About us', 'Contact us', 'Insights', 'Career'].map((link, index) => (
+                                <motion.li
+                                    key={link}
+                                    whileHover={{ x: 5 }}
+                                    transition={{ type: "spring", stiffness: 300 }}
+                                >
+                                    <a href="#" className="hover:text-orange-500 transition-colors duration-300">{link}</a>
+                                </motion.li>
+                            ))}
                         </ul>
-                    </nav> */}
+                    </motion.div>
+
+                    {/* What We Do Section */}
+                    <motion.div variants={itemVariants}>
+                        <h4 className="text-lg font-semibold">What we do</h4>
+                        <div className="bg-orange-500 h-1 w-20 my-2"></div>
+                        <ul className="space-y-2 text-gray-400">
+                            {['Digital Marketing', 'Web Development', 'Mobile Application Development', 'IT Practical Skill training'].map((service, index) => (
+                                <motion.li
+                                    key={service}
+                                    whileHover={{ x: 5 }}
+                                    transition={{ type: "spring", stiffness: 300 }}
+                                >
+                                    <a href="#" className="hover:text-orange-500 transition-colors duration-300">{service}</a>
+                                </motion.li>
+                            ))}
+                        </ul>
+                    </motion.div>
+
+                    {/* Let's Connect Section */}
+                    <motion.div variants={itemVariants}>
+                        <h4 className="text-lg font-semibold">Let's connect</h4>
+                        <div className="bg-orange-500 h-1 w-20 my-2"></div>
+                        <p className="text-gray-400"><b>Center Of Technology Evolution (COTE)</b></p>
+                        <p className="text-gray-400">
+                            Kawaala, Kampala, Uganda.
+                        </p>
+                        <p className="text-gray-400">
+                            <strong>Mob:</strong> +256-773165989<br />
+                            <strong>Email:</strong> <a href="mailto:info@coteug.com" className="hover:underline hover:text-orange-500 transition-colors duration-300">info@coteug.com</a>
+                        </p>
+                    </motion.div>
                 </div>
-            </div>
+
+                {/* Footer Bottom Section */}
+                <motion.div
+                    className="bg-orange-700 py-4 mt-8 -mx-4 px-4"
+                    variants={itemVariants}
+                >
+                    <div className="container mx-auto flex flex-col sm:flex-row justify-between items-center">
+                        <div className="text-sm text-gray-100 text-center sm:text-left mb-2 sm:mb-0">
+                            © {new Date().getFullYear()} Center Of Technology Evolution (COTE), All Rights Reserved.
+                        </div>
+                    </div>
+                </motion.div>
+            </motion.div>
         </footer>
     );
 };

@@ -30,8 +30,8 @@ const ProcessStep: React.FC<{ number: string; title: string; description: string
 
 
                 }} className="w-64 before:bg-white before:rounded-full before:w-72 before:h-72 before:absolute before:-z-10 h-64 rounded-full border-[5px] bg-white border-gray-300 group-hover:border-orange-500 transition-colors duration-300 flex flex-col items-center justify-center p-6">
-                    <h3 className="text-2xl font-bold text-center mb-2">{title}</h3>
-                    <p className="text-center text-gray-600 text-sm">{description}</p>
+                    <h3 className="text-2xl font-bold text-black text-center mb-2">{title}</h3>
+                    {/* <p className="text-center text-gray-600 text-sm">{description}</p> */}
                 </div>
                 <div className="absolute top-1 right-10 w-14 h-14 bg-orange-500 rounded-full flex items-center justify-center text-white font-bold text-2xl">
                     {number}
@@ -57,7 +57,7 @@ const ProcessSteps: React.FC = () => {
                         <span className="text-gray-700 font-medium text-sm">OUR PROCESS</span>
                         <span className="w-2 h-2 bg-orange-500 rounded-full ml-2"></span>
                     </div>
-                    <h2 className="text-4xl font-bold mb-4">
+                    <h2 className="text-4xl text-black font-bold mb-4">
                         <span className="text-orange-500">Process</span> We Follow
                     </h2>
                     <p className="text-gray-600 max-w-2xl mx-auto">

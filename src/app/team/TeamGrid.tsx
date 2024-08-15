@@ -1,6 +1,7 @@
 "use client"
-import React from 'react';
-import { motion } from 'framer-motion';
+import React, { useEffect } from 'react';
+import { motion, useAnimation } from 'framer-motion';
+import { useInView } from 'react-intersection-observer';
 import TeamMemberCard from './TeamMemberCard';
 
 interface TeamMember {
@@ -16,18 +17,67 @@ const teamMembers: TeamMember[] = [
     { name: "NAMIIRO HABIIBAH", role: "General Manager", image: "/assets/team/team06.png" },
     { name: "CAROS HERBERT", role: "IT Director", image: "/assets/team/team05.png" },
     { name: "MULIKATETE ANGELLA", role: "Head Of Programs", image: "/assets/team/team04.png" },
-    // { name: "Sally Watt", role: "Designer", image: "/images/sally-watt.jpg" },
 ];
 
 const TeamGrid: React.FC = () => {
+    const controls = useAnimation();
+    const [ref, inView] = useInView({
+        triggerOnce: false,
+        threshold: 0.1,
+    });
+
+    useEffect(() => {
+        if (inView) {
+            controls.start("visible");
+        }
+    }, [controls, inView]);
+
+    const containerVariants = {
+        hidden: { opacity: 0 },
+        visible: {
+            opacity: 1,
+            transition: {
+                staggerChildren: 0.2,
+            },
+        },
+    };
+
+    const itemVariants = {
+        hidden: { y: 20, opacity: 0 },
+        visible: {
+            y: 0,
+            opacity: 1,
+            transition: {
+                type: "spring",
+                damping: 12,
+                stiffness: 100,
+            },
+        },
+    };
+
     return (
-        <div className="container mx-auto px-4 my-10">
-            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-5">
+        <motion.div
+            className="container mx-auto px-2 my-10"
+            initial="hidden"
+            animate={controls}
+            variants={containerVariants}
+            ref={ref}
+        >
+            <motion.div
+                className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-6"
+            >
                 {teamMembers.map((member, index) => (
-                    <TeamMemberCard name={member.name} position={member.role} imageUrl={member.image} index={index} />
+                    <motion.div key={member.name} variants={itemVariants}>
+                        <TeamMemberCard
+                            name={member.name}
+                            position={member.role}
+                            imageUrl={member.image}
+                            index={index}
+                        />
+                    </motion.div>
                 ))}
-            </div>
-        </div>
+            </motion.div>
+        </motion.div>
     );
 };
 

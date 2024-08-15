@@ -11,9 +11,9 @@ interface TeamMemberProps {
 
 const TeamMemberCard: React.FC<TeamMemberProps> = ({ name, position, imageUrl, index }) => {
     return (
-        <div className="w-[23rem] mx-auto bg-white rounded-3xl shadow-lg overflow-hidden">
+        <div className="w-[25rem] mx-auto bg-white rounded-3xl shadow-lg overflow-hidden">
             <div className="relative">
-                <Image width={500} height={500} src={imageUrl} alt={name} className="w-full h-64 object-cover object-center" />
+                <Image width={500} height={500} src={imageUrl} alt={name} className="w-full h-auto object-cover object-center" />
             </div>
             <div className="relative -mt-10 mx-4">
                 <div className="bg-orange-500 text-white rounded-2xl p-4 text-center">

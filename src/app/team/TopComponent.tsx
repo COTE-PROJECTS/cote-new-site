@@ -12,7 +12,7 @@ const TopComponent = () => {
 
                 <h1 className="text-5xl font-bold mb-4">
                     <span className="text-orange-500">Team</span>
-                    <span className="text-navy-900"> Members</span>
+                    <span className="text-black"> Members</span>
                 </h1>
 
                 <p className="text-gray-600 max-w-2xl mx-auto">

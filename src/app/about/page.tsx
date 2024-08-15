@@ -8,7 +8,7 @@ export const metadata: Metadata = {
 }
 const Page = () => {
     return (
-        <div className='bg-orange-50 h-screen'>
+        <div className='bg-orange-50 my-20'>
             <AboutSection />
 
         </div>

@@ -5,7 +5,7 @@ import CallToAction from './ContactCard';
 
 const ServicesSection: React.FC = () => {
     return (
-        <section className="bg-[#f2ede3] py-16 px-8 h-[40rem]">
+        <section className="py-16 px-8 my-20">
             <div className="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
                 <ServiceCard
                     icon={<FaChartLine size={42} />}
@@ -40,7 +40,7 @@ const ServicesSection: React.FC = () => {
                     title="Market Data Analyzing"
                 />
             </div>
-            <CallToAction />
+            {/* <CallToAction /> */}
         </section>
     );
 };
