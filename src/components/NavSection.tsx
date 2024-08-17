@@ -86,7 +86,7 @@ const NavItem: React.FC<{ item: MenuItem }> = ({ item }) => {
         <li className="relative group">
             <a
                 href={item.href}
-                className={`text-sm font-medium uppercase px-3 py-2 rounded-md transition-all duration-300 ${isActive ? 'text-orange-500 border-b-4 border-orange-500' : 'text-gray-700 hover:text-orange-500'}`}
+                className={`text-sm font-medium uppercase px-3 py-2 rounded-md transition-all duration-300 ${isActive ? 'text-[#ff4c19] border-b-4 border-[#ff4c19]' : 'text-gray-700 hover:text-[#ff4c19]'}`}
             >
                 {item.name}
             </a>
@@ -156,21 +156,21 @@ const NavSection: React.FC = () => {
                         <ul className="space-y-4 mt-8">
                             {menuItems.map((item, index) => (
                                 <li key={index}>
-                                    <a href={item.href} className="block text-gray-700 hover:text-orange-500 py-2">
+                                    <a href={item.href} className="block text-gray-700 hover:text-[#ff4c19] py-2">
                                         {item.name}
                                     </a>
                                     {item.children && (
                                         <ul className="pl-4 mt-2 space-y-2">
                                             {item.children.map((subItem, subIndex) => (
                                                 <li key={subIndex}>
-                                                    <a href={subItem.href} className="block text-gray-600 hover:text-orange-500 py-1">
+                                                    <a href={subItem.href} className="block text-gray-600 hover:text-[#ff4c19] py-1">
                                                         {subItem.name}
                                                     </a>
                                                     {subItem.children && (
                                                         <ul className="pl-4 mt-1 space-y-1">
                                                             {subItem.children.map((grandChild, grandChildIndex) => (
                                                                 <li key={grandChildIndex}>
-                                                                    <a href={grandChild.href} className="block text-gray-500 hover:text-orange-500 py-1">
+                                                                    <a href={grandChild.href} className="block text-gray-500 hover:text-[#ff4c19] py-1">
                                                                         {grandChild.name}
                                                                     </a>
                                                                 </li>

@@ -8,7 +8,7 @@ const projects = [
     { id: 2, title: 'Mooziki', description: 'A music streaming service for Ugandan music', image: '/assets/projects/mooziki.png' },
     { id: 3, title: 'TAPA', description: 'A non government organisation aimed at helping farmers in Kyegegwa district, ease their farming.', image: '/assets/projects/tapagric.png' },
     { id: 4, title: 'Samba Stats', description: 'An app provided livescore services for local leagues in uganda.', image: '/assets/projects/samba-stats.png' },
-    { id: 5, title: 'Ezamba Homes', description: 'Ezamba homes provides the best quality furniture in uganda.', image: '/images/epsilon.jpg' },
+    { id: 5, title: 'Ezamba Homes', description: 'Ezamba homes provides the best quality furniture in uganda.', image: '/assets/projects/enzamba.png' },
     {
         id: 6, title: 'Passionate Hearts Ministries', description: 'An NGO that supports people in Bwizibwera-Rutooma Town Council, Mbarara District', image: '/assets/projects/passionateheartsministries.png'
     },

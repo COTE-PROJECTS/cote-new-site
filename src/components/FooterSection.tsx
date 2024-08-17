@@ -39,7 +39,7 @@ const FooterSection: React.FC = () => {
                     {/* About Us Section */}
                     <motion.div variants={itemVariants}>
                         <h4 className="text-lg font-semibold">About us</h4>
-                        <div className="bg-orange-500 h-1 w-20 my-2"></div>
+                        <div className="bg-[#ff4c19] h-1 w-20 my-2"></div>
                         <p className="mb-4 text-gray-400">
                             COTE (Center Of Technology Evolution), A digitally empowered young people, equipped with practical IT skills from foundational literacy to advanced programming across Africa by 2044.
                         </p>
@@ -49,7 +49,7 @@ const FooterSection: React.FC = () => {
                                 <motion.a
                                     key={icon}
                                     href="#"
-                                    className="hover:text-orange-500 transition-colors duration-300"
+                                    className="hover:text-[#ff4c19] transition-colors duration-300"
                                     whileHover={{ scale: 1.2 }}
                                     whileTap={{ scale: 0.9 }}
                                 >
@@ -62,7 +62,7 @@ const FooterSection: React.FC = () => {
                     {/* Quick Links Section */}
                     <motion.div variants={itemVariants}>
                         <h4 className="text-lg font-semibold">Quick links</h4>
-                        <div className="bg-orange-500 h-1 w-20 my-2"></div>
+                        <div className="bg-[#ff4c19] h-1 w-20 my-2"></div>
                         <ul className="space-y-2 text-gray-400">
                             {['Privacy policy', 'About us', 'Contact us', 'Insights', 'Career'].map((link, index) => (
                                 <motion.li
@@ -70,7 +70,7 @@ const FooterSection: React.FC = () => {
                                     whileHover={{ x: 5 }}
                                     transition={{ type: "spring", stiffness: 300 }}
                                 >
-                                    <a href="#" className="hover:text-orange-500 transition-colors duration-300">{link}</a>
+                                    <a href="#" className="hover:text-[#ff4c19] transition-colors duration-300">{link}</a>
                                 </motion.li>
                             ))}
                         </ul>
@@ -79,7 +79,7 @@ const FooterSection: React.FC = () => {
                     {/* What We Do Section */}
                     <motion.div variants={itemVariants}>
                         <h4 className="text-lg font-semibold">What we do</h4>
-                        <div className="bg-orange-500 h-1 w-20 my-2"></div>
+                        <div className="bg-[#ff4c19] h-1 w-20 my-2"></div>
                         <ul className="space-y-2 text-gray-400">
                             {['Digital Marketing', 'Web Development', 'Mobile Application Development', 'IT Practical Skill training'].map((service, index) => (
                                 <motion.li
@@ -87,7 +87,7 @@ const FooterSection: React.FC = () => {
                                     whileHover={{ x: 5 }}
                                     transition={{ type: "spring", stiffness: 300 }}
                                 >
-                                    <a href="#" className="hover:text-orange-500 transition-colors duration-300">{service}</a>
+                                    <a href="#" className="hover:text-[#ff4c19] transition-colors duration-300">{service}</a>
                                 </motion.li>
                             ))}
                         </ul>
@@ -96,21 +96,21 @@ const FooterSection: React.FC = () => {
                     {/* Let's Connect Section */}
                     <motion.div variants={itemVariants}>
                         <h4 className="text-lg font-semibold">Let's connect</h4>
-                        <div className="bg-orange-500 h-1 w-20 my-2"></div>
+                        <div className="bg-[#ff4c19] h-1 w-20 my-2"></div>
                         <p className="text-gray-400"><b>Center Of Technology Evolution (COTE)</b></p>
                         <p className="text-gray-400">
                             Kawaala, Kampala, Uganda.
                         </p>
                         <p className="text-gray-400">
                             <strong>Mob:</strong> +256-773165989<br />
-                            <strong>Email:</strong> <a href="mailto:info@coteug.com" className="hover:underline hover:text-orange-500 transition-colors duration-300">info@coteug.com</a>
+                            <strong>Email:</strong> <a href="mailto:info@coteug.com" className="hover:underline hover:text-[#ff4c19] transition-colors duration-300">info@coteug.com</a>
                         </p>
                     </motion.div>
                 </div>
 
                 {/* Footer Bottom Section */}
                 <motion.div
-                    className="bg-orange-700 py-4 mt-8 -mx-4 px-4"
+                    className="bg-[#ff4c19] py-4 mt-8 -mx-4 px-4"
                     variants={itemVariants}
                 >
                     <div className="container mx-auto flex flex-col sm:flex-row justify-between items-center">

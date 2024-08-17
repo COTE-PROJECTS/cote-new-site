@@ -21,7 +21,7 @@ const DigitalInclusionSection: React.FC = () => {
                     </strong>
                     <h1 className="text-4xl uppercase md:text-5xl font-extrabold text-black mt-4">
                         Unleash Your {' '}
-                        <span className="bg-[#f7941f] text-black px-2">
+                        <span className="bg-[#ff4c19] text-white px-2">
                             Tech Potential
                         </span>{' '}
 
@@ -31,8 +31,8 @@ const DigitalInclusionSection: React.FC = () => {
                         Launch your tech future today!
                     </p>
                     <a
-                        href="https://www.unwantedwitness.org/digital-inclusion-and-innovation/"
-                        className="mt-8 inline-block bg-[#f7941f] text-white text-lg font-semibold py-3 px-8 rounded hover:bg-opacity-90 transition duration-300"
+                        href="#"
+                        className="mt-8 inline-block bg-[#ff4c19] text-white text-lg font-semibold py-3 px-8 rounded hover:bg-opacity-90 transition duration-300"
                     >
                         LEARN MORE
                     </a>

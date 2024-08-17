@@ -38,7 +38,7 @@ const SubscribeSection: React.FC = () => {
                         </motion.div>
 
                         <h2 className="text-3xl text-black sm:text-4xl lg:text-5xl font-bold mb-4">
-                            <span className="text-orange-500">Subscribe</span> To Get Latest Update From Us
+                            <span className="text-[#ff4c19]">Subscribe</span> To Get Latest Update From Us
                         </h2>
                     </motion.div>
                     <motion.form
@@ -61,7 +61,7 @@ const SubscribeSection: React.FC = () => {
                             />
                             <motion.button
                                 type='submit'
-                                className="bg-orange-500 uppercase flex flex-row place-content-center items-center text-center text-white rounded-full px-4 sm:py-4 py-3 w-full sm:w-auto"
+                                className="bg-[#ff4c19] uppercase flex flex-row place-content-center items-center text-center text-white rounded-full px-4 sm:py-4 py-3 w-full sm:w-auto"
                                 whileHover={{ scale: 1.05 }}
                                 whileTap={{ scale: 0.95 }}
                             >

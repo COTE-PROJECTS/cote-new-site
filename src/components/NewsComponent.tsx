@@ -6,7 +6,7 @@ import { motion } from 'framer-motion';
 const NewsletterSection: React.FC = () => {
     return (
         <motion.div
-            className="py-16 max-h-[65rem] bg-[#f3a74b]"
+            className="py-16 max-h-[65rem] text-white bg-[#ff4c19]"
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             viewport={{ once: true }}
@@ -20,7 +20,7 @@ const NewsletterSection: React.FC = () => {
                     viewport={{ once: true }}
                     transition={{ type: "spring", stiffness: 260, damping: 20 }}
                 >
-                    <div className="w-10 h-10 rounded-full absolute  bg-[#f3a74b] right-0 left-0 -mt-20 z-50 mx-auto"></div>
+                    <div className="w-10 h-10 rounded-full absolute  bg-[#ff4c19] right-0 left-0 -mt-20 z-50 mx-auto"></div>
                 </motion.div>
                 <div className="flex flex-wrap justify-between items-center">
                     <motion.div
@@ -30,10 +30,10 @@ const NewsletterSection: React.FC = () => {
                         viewport={{ once: true }}
                         transition={{ duration: 0.6, delay: 0.2 }}
                     >
-                        <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold text-black">
+                        <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold">
                             Why Focus on Skilling Young People with In-Demand Practical IT Skills?
                         </h1>
-                        <p className="mt-4 text-base sm:text-lg text-black">
+                        <p className="mt-4 text-base sm:text-lg text-[#ddd]">
                             Imagine a Uganda where young people, from primary school onwards, grow up equipped with the power of technology. A future where practical IT skills are not just a privilege, but an essential part of education, preparing them to lead in a digital world.
                         </p>
                     </motion.div>

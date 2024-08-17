@@ -29,7 +29,7 @@ const DrivingChangeComponent: React.FC = () => {
                             transition={{ duration: 0.5, delay: 0.3 }}
                         >
                             Mentorship {' '}
-                            <span className="bg-[#f7941f] text-black px-2">and Support</span>
+                            <span className="bg-[#ff4c19] text-white px-2">and Support</span>
                         </motion.h1>
                         <motion.p
                             className="text-lg sm:text-xl text-black mt-6"
@@ -43,7 +43,7 @@ const DrivingChangeComponent: React.FC = () => {
 
                         <motion.a
                             href="#"
-                            className="mt-8 inline-block bg-[#f7941f] text-white text-lg font-semibold py-3 px-8 rounded hover:bg-opacity-90 transition duration-300"
+                            className="mt-8 inline-block bg-[#ff4c19] text-white text-lg font-semibold py-3 px-8 rounded hover:bg-opacity-90 transition duration-300"
                             whileHover={{ scale: 1.05 }}
                             whileTap={{ scale: 0.95 }}
                             initial={{ y: 20, opacity: 0 }}

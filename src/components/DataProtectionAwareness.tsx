@@ -20,17 +20,17 @@ const DataProtectionSection: React.FC = () => {
                         <div className="px-6">
                             {/* <b className="block font-extrabold text-lg text-black">Data Protection</b> */}
                             <h1 className="text-4xl text-black uppercase font-bold mt-4">
-                                Interactive and Engaging Learning{' '}
-                                {/* <span className="bg-[#f7941f] text-black px-1">
-                                    PRIVACY AND DIGITAL LIFE,
-                                </span> */}
+                                Interactive and {' '}
+                                <span className="bg-[#ff4c19] text-white px-1">
+                                    Engaging Learning
+                                </span>
                             </h1>
                             <p className="mt-4 text-lg text-black">
                                 We bring IT to life with interactive learning platforms like gamified simulations and collaborative coding environments. This makes learning not just informative, but also fun and engaging.
                             </p>
                             <a
                                 href="#"
-                                className="inline-block mt-6 px-6 py-3 bg-[#f7941f] text-black font-semibold rounded-md hover:bg-[#e4830d]"
+                                className="inline-block mt-6 px-6 py-3 bg-[##ff4c19] text-white font-semibold rounded-md hover:bg-[#ff4c19]"
                             >
                                 LEARN MORE
                             </a>

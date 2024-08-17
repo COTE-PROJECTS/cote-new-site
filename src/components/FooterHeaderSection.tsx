@@ -41,7 +41,7 @@ const PartnerSection: React.FC = () => {
                     rel="noopener noreferrer"
                     className="inline-block bg-orange-500 text-white font-bold py-3 px-6 rounded-full hover:bg-orange-600 transition duration-300"
                     style={{
-                        backgroundColor: '#f7941f',
+                        backgroundColor: '#ff4c19',
                         color: '#ffffff',
                     }}
                 >

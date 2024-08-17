@@ -37,12 +37,12 @@ const partners = [
         imgSrc: '/assets/pngs/p5.jpg',
         imgAlt: 'US Mission Logo',
     },
-    // {
-    //     name: 'OISEA',
-    //     url: '#',
-    //     imgSrc: 'https://www.unwantedwitness.org/wp-content/uploads/2018/12/OISEA.png',
-    //     imgAlt: 'OISEA Logo',
-    // },
+    {
+        name: 'ENZAMBA',
+        url: '#',
+        imgSrc: '/assets/pngs/enzamba.png',
+        imgAlt: 'OISEA Logo',
+    },
     // {
     //     name: 'HIVOS',
     //     url: '#',
@@ -88,10 +88,10 @@ const Partners: React.FC = () => {
                 <div className="text-left mb-8">
                     <div className="flex justify-start items-center mb-4">
                         <h1 className="text-3xl font-bold">OUR PARTNERS</h1>
-                        <span className="h-1 bg-orange-500 w-20 ml-4"></span>
+                        <span className="h-1 bg-[#ff4c19] w-20 ml-4"></span>
                     </div>
                 </div>
-                <ul className="grid sm:grid-cols-6 grid-cols-2 gap-y-8 justify-items-center">
+                <ul className="grid sm:grid-cols-7 grid-cols-2 gap-y-8 justify-items-center">
                     {partners.map((partner, index) => (
                         <li key={index} className="flex items-center justify-center">
                             <a href={partner.url} target="_blank" rel="noopener noreferrer">

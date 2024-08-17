@@ -48,7 +48,7 @@ const InternetFreedomAwareness: React.FC = () => {
                             transition={{ duration: 0.5, delay: 0.4 }}
                         >
                             Practical Skills{' '}
-                            <span className="bg-[#f7941f] text-black px-2">
+                            <span className="bg-[#ff4c19] text-white px-2">
                                 Development
                             </span>
                         </motion.h1>
@@ -63,7 +63,7 @@ const InternetFreedomAwareness: React.FC = () => {
                         </motion.p>
                         <motion.a
                             href="#"
-                            className="mt-8 inline-block bg-[#f7941f] text-white text-lg font-semibold py-3 px-8 rounded hover:bg-opacity-90 transition duration-300"
+                            className="mt-8 inline-block bg-[##ff4c19] text-white text-lg font-semibold py-3 px-8 rounded hover:bg-opacity-90 transition duration-300"
                             whileHover={{ scale: 1.05 }}
                             whileTap={{ scale: 0.95 }}
                             initial={{ y: 20, opacity: 0 }}
