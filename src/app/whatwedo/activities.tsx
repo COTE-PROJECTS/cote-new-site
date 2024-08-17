@@ -8,9 +8,9 @@ const ProcessStep: React.FC<{ number: string; title: string; description: string
     const [ref, inView] = useInView();
 
     useEffect(() => {
-        if (inView) {
-            controls.start('visible');
-        }
+        // if (inView) {
+        controls.start('visible');
+        // }
     }, [controls, inView]);
 
     return (

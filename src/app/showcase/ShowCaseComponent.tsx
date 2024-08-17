@@ -15,11 +15,11 @@ const projects = [
 ];
 
 const ProjectsPage: React.FC = () => {
-    const [loaded, setLoaded] = useState(false);
+    const [loaded, setLoaded] = useState(true);
 
-    useEffect(() => {
-        setLoaded(true);
-    }, []);
+    // useEffect(() => {
+    //     setLoaded(true);
+    // }, []);
 
     return (
         <div className="min-h-screen my-20 py-12 px-6">

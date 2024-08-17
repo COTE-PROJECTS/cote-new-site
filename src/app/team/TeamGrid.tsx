@@ -27,9 +27,9 @@ const TeamGrid: React.FC = () => {
     });
 
     useEffect(() => {
-        if (inView) {
-            controls.start("visible");
-        }
+        // if (inView) {
+        controls.start("visible");
+        // }
     }, [controls, inView]);
 
     const containerVariants = {

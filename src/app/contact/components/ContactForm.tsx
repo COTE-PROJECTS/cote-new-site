@@ -73,9 +73,9 @@ const ContactForm: React.FC = () => {
     }, [makeShot]);
 
     React.useEffect(() => {
-        if (isConfettiActive) {
-            fire();
-        }
+        // if (isConfettiActive) {
+        fire();
+        // }
     }, [isConfettiActive, fire]);
 
     const onSubmit = async (e: React.FormEvent<HTMLFormElement>) => {

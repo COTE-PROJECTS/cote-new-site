@@ -146,14 +146,14 @@ const HeroComponent: React.FC = () => {
                 <SwiperSlide key={index}>
                     <div className="flex flex-col md:flex-row items-center justify-center h-full px-4 md:px-20 content-wrapper">
                         <div className="md:w-1/2 mb-8 md:mb-0">
-                            <h2 className="text-3xl md:text-5xl font-bold text-gray-800 mb-4">
+                            <h2 className="text-3xl sm:text-9xl font-bold text-gray-800 mb-4">
                                 {content.title}
                             </h2>
-                            <p className="text-xl text-gray-600 mb-6">
+                            <p className="text-xl font-light sm:text-5xl pr-2 text-gray-600 mb-6">
                                 {content.description}
                             </p>
                         </div>
-                        <div className="md:w-1/2">
+                        <div className="sm:w-1/2">
                             <Image
                                 width={1094}
                                 height={1092}

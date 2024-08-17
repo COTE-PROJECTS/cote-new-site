@@ -9,7 +9,7 @@ const partners = [
     },
     {
         name: 'Mooziki',
-        url: '#',
+        url: 'https://www.mooziki.com/',
         imgSrc: '/assets/pngs/p3.png',
         imgAlt: 'DHRLab Logo',
     },
