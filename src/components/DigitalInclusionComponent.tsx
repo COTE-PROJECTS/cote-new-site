@@ -9,7 +9,7 @@ const DigitalInclusionSection: React.FC = () => {
         >
             {/* Background Image */}
             <Image
-                src="https://api2.iloveimg.com/v1/download/g0v00md62x402zpmhy22m6gmry6tzAl2qygvj0myg8nnp554q26854x9c3A88hyv2jAmz48drbpf7mp90r2jj0fqq4dgA6t5j4cb3c6z40257y5Aq94qnpq23kmvfgbt8q7p7A4dztkfxb8r2hd3p4rktyl4lth2rg2q5A9vdcg40gvjccv1"
+                src="/assets/pngs/vision.jpg"
                 alt="Digital Inclusion" width={1920} height={1080}
                 className="absolute inset-0 w-full h-full object-cover opacity-1"
             />

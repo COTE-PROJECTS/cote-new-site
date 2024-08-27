@@ -1,10 +1,18 @@
+"use client"
 import React from 'react';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
+import SwiperCore from 'swiper';
+import { Autoplay } from 'swiper/modules';
+SwiperCore.use([Autoplay]);
 
 const partners = [
     {
         name: 'TAPA (Toil And Promote Agriculture)',
-        url: 'https://www.tapagric.org',
-        imgSrc: 'https://www.tapagric.org/_next/image?url=%2Fassets%2Fimages%2Flogo.png&w=1080&q=75',
+        url: 'https://www.tapagric.org/',
+        imgSrc: '/assets/pngs/tapa.png',
         imgAlt: 'Omidyar Network Logo',
     },
     {
@@ -22,7 +30,7 @@ const partners = [
     {
         name: 'MARITIME SHIPPING',
         url: 'https://www.maritimeshipping-uganda.com/',
-        imgSrc: 'https://www.maritimeshipping-uganda.com/_next/image?url=%2Fassets%2Fimg%2Flogo.png&w=256&q=75',
+        imgSrc: '/assets/pngs/logo.png',
         imgAlt: 'Martimeshipping',
     },
     {
@@ -91,9 +99,22 @@ const Partners: React.FC = () => {
                         <span className="h-1 bg-[#ff4c19] w-20 ml-4"></span>
                     </div>
                 </div>
-                <ul className="grid sm:grid-cols-7 grid-cols-2 gap-y-8 justify-items-center">
+                <Swiper
+                    spaceBetween={30}
+                    slidesPerView={2}
+                    breakpoints={{
+                        640: { slidesPerView: 2 },
+                        768: { slidesPerView: 4 },
+                        1024: { slidesPerView: 7 },
+                    }}
+                    autoplay={{
+                        delay: 2500,
+                        disableOnInteraction: false,
+                    }}
+                    loop={true}
+                >
                     {partners.map((partner, index) => (
-                        <li key={index} className="flex items-center justify-center">
+                        <SwiperSlide key={index} className="flex items-center justify-center">
                             <a href={partner.url} target="_blank" rel="noopener noreferrer">
                                 <img
                                     className="mx-auto scale-with-grid max-h-20"
@@ -102,11 +123,12 @@ const Partners: React.FC = () => {
                                     loading="lazy"
                                 />
                             </a>
-                        </li>
+                        </SwiperSlide>
                     ))}
-                </ul>
+                </Swiper>
             </div>
         </section>
+
     );
 };
 

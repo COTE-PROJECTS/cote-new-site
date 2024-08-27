@@ -8,7 +8,7 @@ const DataProtectionSection: React.FC = () => {
                     <div className="w-full sm:w-1/2">
                         <div className="image_frame">
                             <Image
-                                src="https://api2.iloveimg.com/v1/download/hmqqvsf9wrlzfrldk01tn9pwlmsnf3041h44xcmx1nsp8ftbpbz87c95x9kfdww7pAtm22r7571xvbynrAvwftch2gApz61j1914knc3wvpvzngklwz318gvhhnlyk9tft7vnmjv5yf8tpgz46AAhgnpcwx6vdyxgn61bww5njbz4f73fbb1"
+                                src="/assets/logo/interactive.jpg"
                                 alt="DATA-PROTECTION-TRAINING"
                                 width={600}
                                 height={600}

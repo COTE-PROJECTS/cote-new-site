@@ -1,7 +1,8 @@
 import React from 'react';
-import { FaChartLine, FaPencilRuler, FaBrush, FaLaptopCode, FaFileAlt, FaChartPie, FaHandshake, FaTasks } from 'react-icons/fa';
+import { FaChartLine, FaPencilRuler, FaBrush, FaLaptopCode, FaFileAlt, FaChartPie, FaHandshake, FaTasks, FaAndroid, FaMobileAlt } from 'react-icons/fa';
 import ServiceCard from './ServiceCard';
 import CallToAction from './ContactCard';
+import { IoIosAdd } from 'react-icons/io';
 
 const ServicesSection: React.FC = () => {
     return (
@@ -20,8 +21,8 @@ const ServicesSection: React.FC = () => {
                     title="UI/UX Web Designing"
                 />
                 <ServiceCard
-                    icon={<FaBrush size={42} />}
-                    title="Sketch Designing"
+                    icon={<FaMobileAlt size={42} />}
+                    title="Mobile App Development"
                 />
                 <ServiceCard
                     icon={<FaFileAlt size={42} />}

@@ -49,9 +49,9 @@ const NewsletterSection: React.FC = () => {
                             whileHover={{ scale: 1.05 }}
                             transition={{ type: "spring", stiffness: 300, damping: 10 }}
                         >
-                            <div className="relative border rounded-lg overflow-hidden">
+                            <div className="relative rounded-lg overflow-hidden">
                                 <Image
-                                    src="https://api10.iloveimg.com/v1/download/cA0hryxgkxd6k38bhw4bs3m9kz1v9ypdwds1vxgkcggAwybj4mv0csqf0phl5y581kf41cvg1f08y8p3rtht8fm0zrbm2qd2xA00t3vnyjqs3pzA4hszdb2cnj4t96n2j2q34pAjsy7A2jjzv19ttsg8ypl4zAfcrfvr1b41ghxbbl6wx1pq"
+                                    src="/assets/svgs/skilling_young_pple.svg"
                                     width={800}
                                     height={800}
                                     alt="Project Image"

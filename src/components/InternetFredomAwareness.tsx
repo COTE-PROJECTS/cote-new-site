@@ -8,7 +8,7 @@ const InternetFreedomAwareness: React.FC = () => {
         <section className="py-16 bg-[#f1f1f2] relative overflow-hidden">
             {/* Background Image */}
             <Image
-                src="https://api1.iloveimg.com/v1/download/9swz9ck83skch2929lrl94yx1v2q0zlwqtbArpn2fmb9d46q12m39t4nw50xjcyyffnm5hsl9yAhvc8wbvqmdd1t1A1kr9jp0k4cc5f56gb7vgpj0Azw48gndvqhqtkct9xxjllyq4nzzzyq4mpfl5tkfgbzj45nq2crwnshhbcy2f65zzbq"
+                src="/assets/pngs/young-people-working.jpg"
                 alt="Freedom of Expression"
                 width={1920}
                 height={1080}

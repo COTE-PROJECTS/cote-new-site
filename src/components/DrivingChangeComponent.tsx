@@ -68,7 +68,7 @@ const DrivingChangeComponent: React.FC = () => {
                             <Image
                                 width={600}
                                 height={600}
-                                src="https://api2.iloveimg.com/v1/download/55y7mqzn2g5p30lkxkkfmkw0shrvxcczlpy4862yn5zpd0g6h12x6nsyk0hh2tw7q6l0jhkr8mnt0894lr1y9bkz5xdl9qgtsm7hcsyn1jnyk09pbycxgyqr8418l42spAmsvz695h15vdA03nx8pmgb0A0fmlmrh86rlyzdAtksrxjqh68q"
+                                src="/assets/pngs/mentorship.jpg"
                                 alt="Mentorship and Support"
                                 className="max-w-full h-auto rounded-lg shadow-lg"
                             />
