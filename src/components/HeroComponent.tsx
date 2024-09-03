@@ -154,7 +154,7 @@ const HeroComponent: React.FC = () => {
                             </p>
                         </div>
                         <div className="sm:w-1/2">
-                            <Image
+                            <img
                                 width={1094}
                                 height={1092}
                                 src={content.imageUrl}
