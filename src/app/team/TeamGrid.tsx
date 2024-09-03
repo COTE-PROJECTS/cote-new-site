@@ -22,14 +22,16 @@ const teamMembers: TeamMember[] = [
 const TeamGrid: React.FC = () => {
     const controls = useAnimation();
     const [ref, inView] = useInView({
-        triggerOnce: false,
+        triggerOnce: true,  // Set to true if you want the animation to run once, otherwise false
         threshold: 0.1,
     });
 
     useEffect(() => {
-        // if (inView) {
-        controls.start("visible");
-        // }
+        if (inView) {
+            controls.start("visible");
+        } else {
+            controls.start("hidden");
+        }
     }, [controls, inView]);
 
     const containerVariants = {
