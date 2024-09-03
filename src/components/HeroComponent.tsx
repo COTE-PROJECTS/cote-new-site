@@ -19,7 +19,7 @@ const contentArray: ContentItem[] = [
     {
         title: "What we believe",
         description: "Equipping the young people with digital Skills is Essential for Africa's prosperity.",
-        imageUrl: "https://cdni.iconscout.com/illustration/premium/thumb/digital-marketing-illustration-download-in-svg-png-gif-file-formats--android-logo-ai-targeting-audience-pack-business-illustrations-2840777.png?f=webp",
+        imageUrl: "https://cdni.iconscout.com/illustration/premium/thumb/digital-marketing-illustration-download-in-svg-png-gif-file-formats--online-promotion-business-advertisement-isometric-pack-illustrations-3804437.png?f=webp",
         imageAlt: "Digital Marketing Illustration"
     },
     {
