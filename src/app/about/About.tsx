@@ -1,11 +1,26 @@
 "use client"
-import React from 'react';
-import { motion } from 'framer-motion';
+import React, { useEffect } from 'react';
+import { motion, useAnimation } from 'framer-motion';
+import { useInView } from 'react-intersection-observer';
 import Card from './CardComponent';
 import { FaDollarSign, FaTools, FaUserCog } from 'react-icons/fa';
 import Image from 'next/image';
 
 const AboutSection = () => {
+    const controls = useAnimation();
+    const [ref, inView] = useInView({
+        triggerOnce: false,
+        threshold: 0.1,
+    });
+
+    useEffect(() => {
+        if (inView) {
+            controls.start("visible");
+        } else {
+            controls.start("hidden");
+        }
+    }, [controls, inView]);
+
     const containerVariants = {
         hidden: { opacity: 0 },
         visible: {
@@ -56,8 +71,8 @@ const AboutSection = () => {
                 className="max-w-7xl mx-auto py-16 px-4 sm:px-6 lg:px-8"
                 variants={containerVariants}
                 initial="hidden"
-                whileInView="visible"
-                viewport={{ once: true }}
+                animate={controls}
+                ref={ref}
             >
                 <motion.div className="grid grid-cols-1 lg:grid-cols-2 gap-12 mb-16" variants={containerVariants}>
                     <motion.div className="space-y-6" variants={itemVariants}>
@@ -79,7 +94,9 @@ const AboutSection = () => {
                         </p>
                     </motion.div>
                 </motion.div>
-
+                <motion.div variants={containerVariants}>
+                    <h2 className="text-3xl font-bold text-gray-800 mb-8">According To Stats</h2>
+                </motion.div>
                 <motion.div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8" variants={containerVariants}>
                     <Card
                         icon={<FaDollarSign size={32} />}
