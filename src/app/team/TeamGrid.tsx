@@ -22,7 +22,7 @@ const teamMembers: TeamMember[] = [
 const TeamGrid: React.FC = () => {
     const controls = useAnimation();
     const [ref, inView] = useInView({
-        triggerOnce: true,  // Set to true if you want the animation to run once, otherwise false
+        triggerOnce: false,  // Changed to false to allow re-triggering
         threshold: 0.1,
     });
 

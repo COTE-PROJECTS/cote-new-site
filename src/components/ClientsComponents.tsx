@@ -47,16 +47,16 @@ const partners = [
     },
     {
         name: 'ENZAMBA',
-        url: '#',
+        url: 'https://www.enzamba.com/',
         imgSrc: '/assets/pngs/enzamba.png',
         imgAlt: 'OISEA Logo',
     },
-    // {
-    //     name: 'HIVOS',
-    //     url: '#',
-    //     imgSrc: 'https://www.unwantedwitness.org/wp-content/uploads/2021/06/HIVOS-2-672x390-1-129x75-1.jpg',
-    //     imgAlt: 'HIVOS Logo',
-    // },
+    {
+        name: 'Passionate Hearts',
+        url: 'https://passionateheartsministries.org/',
+        imgSrc: '/assets/projects/passionate.png',
+        imgAlt: 'Passionate Hearts',
+    },
     // {
     //     name: 'Internews',
     //     url: '#',

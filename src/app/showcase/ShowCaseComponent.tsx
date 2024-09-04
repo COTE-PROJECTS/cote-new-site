@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 import Image from "next/image";
 
 const projects = [
-    { id: 1, title: 'Maritime Shipping Company', description: 'A mobile app that aids one to get a loan.', image: '/assets/projects/maritimeshipping-uganda.png' },
+    { id: 1, title: 'Maritime Shipping Company', description: 'A Shipping Company that offers efficient and cost-effective global logistics solutions.', image: '/assets/projects/maritimeshipping-uganda.png' },
     { id: 2, title: 'Mooziki', description: 'A music streaming service for Ugandan music', image: '/assets/projects/mooziki.png' },
     { id: 3, title: 'TAPA', description: 'A non government organisation aimed at helping farmers in Kyegegwa district, ease their farming.', image: '/assets/projects/tapagric.png' },
     { id: 4, title: 'Samba Stats', description: 'An app provided livescore services for local leagues in uganda.', image: '/assets/projects/samba-stats.png' },
