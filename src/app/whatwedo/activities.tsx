@@ -17,7 +17,7 @@ const ProcessStep: React.FC<{ number: string; title: string; description: string
         <motion.div
             ref={ref}
             animate={controls}
-            initial="hidden"
+
             variants={{
                 visible: { opacity: 1, y: 0 },
                 hidden: { opacity: 0, y: 50 }
