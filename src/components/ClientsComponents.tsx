@@ -95,7 +95,7 @@ const Partners: React.FC = () => {
             <div className="max-w-7xl mx-auto px-4">
                 <div className="text-left mb-8">
                     <div className="flex justify-start items-center mb-4">
-                        <h1 className="text-3xl font-bold">OUR PARTNERS</h1>
+                        <h1 className="text-3xl text-black font-bold">OUR PARTNERS</h1>
                         <span className="h-1 bg-[#ff4c19] w-20 ml-4"></span>
                     </div>
                 </div>
