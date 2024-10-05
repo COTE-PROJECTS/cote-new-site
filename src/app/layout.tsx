@@ -21,14 +21,19 @@ export default function RootLayout({
 }>) {
   return (
 
-    <html lang="en">
+    <html>
       <head>
         <link href="https://fonts.cdnfonts.com/css/poppins" rel="stylesheet" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </head>
-      <NavSection />
-      <body className={`${inter.className} bg-orange-50`}>{children}</body>
-      <FooterSection />
+
+
+      <body className={`${inter.className} bg-orange-50`}>
+        <NavSection />
+        {children}
+        <FooterSection />
+      </body>
+
     </html>
 
   );
