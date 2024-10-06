@@ -78,8 +78,8 @@ const NavSection: React.FC = () => {
     }, []);
 
     return (
-        <div className="relative">
-            <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ease-in-out ${scrolled ? 'bg-white text-black shadow-md' : 'bg-gray-200 text-black'
+        <div className="relative box-border w-full">
+            <nav className={`fixed top-0 left-0 z-50 box-border w-full transition-all duration-300 ease-in-out ${scrolled ? 'bg-white text-black shadow-md' : 'bg-gray-200 text-black'
                 }`}>
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div className="flex justify-between items-center h-16 lg:h-20">
@@ -159,7 +159,7 @@ const NavSection: React.FC = () => {
 
             {/* Mobile menu */}
             {isOpen && (
-                <div className="lg:hidden fixed inset-0 z-50 overflow-y-auto bg-white" style={{ clipPath: 'circle(150% at 100% 0)' }}>
+                <div className="lg:hidden fixed box-border w-full  inset-0 z-50 overflow-y-auto bg-white" style={{ clipPath: 'circle(150% at 100% 0)' }}>
                     <div className="flex flex-col h-full justify-between pt-16 pb-6">
                         <div className="space-y-1 relative">
                             <button

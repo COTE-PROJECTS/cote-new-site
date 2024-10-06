@@ -28,7 +28,7 @@ export default function RootLayout({
       </head>
 
 
-      <body className={`${inter.className} bg-orange-50`}>
+      <body className={`${inter.className} box-border overflow-x-hidden bg-orange-50`}>
         <NavSection />
         {children}
         <FooterSection />
