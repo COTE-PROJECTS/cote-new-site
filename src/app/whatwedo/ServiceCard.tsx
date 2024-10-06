@@ -12,7 +12,7 @@ const ServiceCard: React.FC<ServiceCardProps> = ({ icon, title }) => {
         <motion.div
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
-            className="bg-gradient-to-br from-amber-400 to-amber-600 rounded-3xl w-full max-w-sm p-8 text-center text-white flex flex-col items-center justify-center shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden relative group"
+            className="bg-gradient-to-br from-amber-300 to-[#ff4c19] rounded-3xl w-full max-w-sm p-8 text-center text-white flex flex-col items-center justify-center shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden relative group"
         >
             <div className="absolute inset-0 bg-black opacity-0 group-hover:opacity-10 transition-opacity duration-300"></div>
             <motion.div

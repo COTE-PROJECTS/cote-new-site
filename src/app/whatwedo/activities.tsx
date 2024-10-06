@@ -33,7 +33,7 @@ const ProcessStep: React.FC<{ number: string; title: string; description: string
                     <h3 className="text-2xl font-bold text-black text-center mb-2">{title}</h3>
                     {/* <p className="text-center text-gray-600 text-sm">{description}</p> */}
                 </div>
-                <div className="absolute top-1 right-10 w-14 h-14 bg-orange-500 rounded-full flex items-center justify-center text-white font-bold text-2xl">
+                <div className="absolute top-1 right-10 w-14 h-14 bg-[#ff4c19] rounded-full flex items-center justify-center text-white font-bold text-2xl">
                     {number}
                 </div>
             </div>
@@ -53,19 +53,19 @@ const ProcessSteps: React.FC = () => {
             <div className="container mx-auto px-4">
                 <div className="text-center mb-12">
                     <div className="inline-flex items-center bg-white rounded-full px-4 py-1 shadow-sm mb-4">
-                        <span className="w-2 h-2 bg-orange-500 rounded-full mr-2"></span>
+                        <span className="w-2 h-2 bg-[#ff4c19] rounded-full mr-2"></span>
                         <span className="text-gray-700 font-medium text-sm">OUR PROCESS</span>
-                        <span className="w-2 h-2 bg-orange-500 rounded-full ml-2"></span>
+                        <span className="w-2 h-2 bg-[#ff4c19] rounded-full ml-2"></span>
                     </div>
                     <h2 className="text-4xl text-black font-bold mb-4">
-                        <span className="text-orange-500">Process</span> We Follow
+                        <span className="text-[#ff4c19]">Process</span> We Follow
                     </h2>
                     <p className="text-gray-600 max-w-2xl mx-auto">
                         As COTE we follow a systematic approach we follow when developing our client's solutions.
                     </p>
                 </div>
                 <div className="relative flex flex-col lg:flex-row justify-between items-center gap-12 lg:gap-0">
-                    {/* <Arrow /> */}
+                    <Arrow />
                     <ProcessStep
                         number="01"
                         title="Research Project"

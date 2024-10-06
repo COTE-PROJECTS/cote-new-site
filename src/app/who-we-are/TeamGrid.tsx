@@ -4,19 +4,21 @@ import { motion, useAnimation } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 import TeamMemberCard from './TeamMemberCard';
 
-interface TeamMember {
+export interface TeamMember {
     name: string;
     role: string;
     image: string;
+    slug: string;
+    bio?: string;
 }
 
 const teamMembers: TeamMember[] = [
-    { name: "BAHINDI EMMANUEL", role: "CEO, Director", image: "/assets/team/team01.png" },
-    { name: "MUGAMBA BRUNO", role: "CTO, Director", image: "/assets/team/team02.png" },
-    { name: "MUGASA TUHUMWIRE", role: "Chairman, Director", image: "/assets/team/team03.png" },
-    { name: "NAMIIRO HABIIBAH", role: "General Manager", image: "/assets/team/team06.png" },
-    { name: "CAROS HERBERT", role: "IT Director", image: "/assets/team/team05.png" },
-    { name: "MULIKATETE ANGELLA", role: "Head Of Programs", image: "/assets/team/team04.png" },
+    { name: "BAHINDI EMMANUEL", role: "CEO, Director", slug: "bahindi-emmanuel", image: "/assets/team/team01.png" },
+    { name: "MUGAMBA BRUNO", role: "CTO, Director", slug: "mugamba-bruno", image: "/assets/team/team02.png" },
+    { name: "MUGASA TUHUMWIRE", role: "Chairman, Director", slug: "mugasa-tuhumwire", image: "/assets/team/team03.png" },
+    { name: "NAMIIRO HABIIBAH", role: "General Manager", slug: "namiiro-habiibah", image: "/assets/team/team06.png" },
+    { name: "CAROS HERBERT", role: "IT Director", slug: "caros-herbert", image: "/assets/team/team05.png" },
+    { name: "MULIKATETE ANGELLA", role: "Head Of Programs", slug: "mulikatete-angella", image: "/assets/team/team04.png" },
 ];
 
 const TeamGrid: React.FC = () => {
@@ -74,7 +76,7 @@ const TeamGrid: React.FC = () => {
                             name={member.name}
                             position={member.role}
                             imageUrl={member.image}
-                            index={index}
+                            slug={member.slug}
                         />
                     </motion.div>
                 ))}

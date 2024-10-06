@@ -2,22 +2,22 @@ import Image from "next/image"
 import React from 'react';
 import { FaFacebook, FaTwitter, FaYoutube, FaInstagram } from 'react-icons/fa';
 
-interface TeamMemberProps {
+export interface TeamMemberProps {
     name: string;
     position: string;
     imageUrl: string;
-    index: number;
+    slug: string;
 }
 
-const TeamMemberCard: React.FC<TeamMemberProps> = ({ name, position, imageUrl, index }) => {
+const TeamMemberCard: React.FC<TeamMemberProps> = ({ name, position, imageUrl, slug }) => {
     return (
-        <div className="w-[25rem] mx-auto bg-white rounded-3xl shadow-lg overflow-hidden">
+        <div className="w-[25rem] mt-10 mx-auto bg-white rounded-3xl shadow-lg overflow-hidden">
             <div className="relative">
                 <Image width={500} height={500} src={imageUrl} alt={name} className="w-full h-auto object-cover object-center" />
             </div>
             <div className="relative -mt-10 mx-4">
                 <div className="bg-orange-500 text-white rounded-2xl p-4 text-center">
-                    <h2 className="text-xl font-bold">{name}</h2>
+                    <h2 className="text-xl font-bold"><a href={`/who-we-are/team/${slug}`}>{name}</a></h2>
                     <p className="text-sm">{position}</p>
                 </div>
             </div>
