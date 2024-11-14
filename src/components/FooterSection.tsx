@@ -102,8 +102,8 @@ const FooterSection: React.FC = () => {
                             Kawaala, Kampala, Uganda.
                         </p>
                         <p className="text-gray-400">
-                            <strong>Mob:</strong> +256-773165989<br />
-                            <strong>Email:</strong> <a href="mailto:info@coteug.com" className="hover:underline hover:text-[#ff4c19] transition-colors duration-300">info@coteug.com</a>
+                            <strong>Mob:</strong> <a href="tel:+256773165989" className="hover:underline hover:text-[#ff4c19] transition-colors duration-300">+256-773165989</a>  | <a href="tel:+256750482089" className='hover:underline hover:text-[#ff4c19] transition-colors duration-300'>+256-750482089</a> <br />
+                            <strong>Email:</strong> <a href="mailto:cotetech256@gmail.com" className="hover:underline hover:text-[#ff4c19] transition-colors duration-300">cotetech256@gmail.com</a>
                         </p>
                     </motion.div>
                 </div>
