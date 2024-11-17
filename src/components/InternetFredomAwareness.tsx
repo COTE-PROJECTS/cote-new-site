@@ -11,6 +11,7 @@ const InternetFreedomAwareness: React.FC = () => {
                 src="/assets/pngs/young-people-working.jpg"
                 alt="Freedom of Expression"
                 width={1920}
+                priority
                 height={1080}
                 className="absolute inset-0 w-full h-full object-cover opacity-1"
             />
